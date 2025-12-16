@@ -21,32 +21,27 @@ npm install
 ```bash
 npm start
 ```
+או השתמש ב-`start.bat` (ל-Windows) - הוא יפתח את הדפדפן אוטומטית.
 
 השרת יפעל ב-`http://localhost:3001`
-
-3. **פתחו את המערכת:**
-פתחו את הדפדפן וכנסו לכתובת:
-```
-http://localhost:3001
-```
 
 ## מבנה הפרויקט
 
 ```
 מערכת חישוב מלגות/
-├── index.html              # דף הבית של המערכת
 ├── server.js               # שרת Express עצמאי
 ├── package.json            # תלויות Node.js
 ├── README.md               # קובץ זה
-├── start.bat               # סקריפט הפעלה ל-Windows
+├── start.bat               # סקריפט הפעלה ל-Windows (פותח דפדפן אוטומטית)
 ├── .gitignore              # קבצים להתעלמות ב-git
+├── public/
+│   └── index.html          # דף הבית של המערכת
 ├── data/
-│   └── scholarships.json   # מסד נתונים של המלגות
-├── קבצי CSV/               # קבצי נוכחות להעלאה (בשורש)
+│   ├── scholarships.json   # מסד נתונים של המלגות
 │   ├── books_inventory (1).csv
 │   ├── SdarimDetail_Meforat_*.csv
 │   └── ...
-└── דוחות PDF/              # דוחות שנוצרו (בשורש)
+└── reports/
     ├── דוח כללי *.pdf
     ├── דוחות אישיים *.pdf
     └── ...
