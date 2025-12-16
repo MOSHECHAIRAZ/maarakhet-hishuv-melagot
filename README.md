@@ -2,7 +2,7 @@
 
 מערכת מלגות עצמאית בפונקציונליות מלאה, לא תלויה במערכות אחרות.
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/MOSHECHAIRAZ/-)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/MOSHECHAIRAZ/scholarship-system)
 
 ## התקנה והפעלה
 
