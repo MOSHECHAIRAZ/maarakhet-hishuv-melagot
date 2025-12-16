@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון מלגות - עם היסטוריית חישובים</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @media print {
+            body * { visibility: hidden; }
+            #printable-area, #printable-area * { visibility: visible; }
+            #printable-area { position: absolute; left: 0; top: 0; width: 100%; }
+            .report-page { page-break-after: always; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm border-b border-gray-200 mb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="text-blue-600 font-medium">מערכת מלגות עצמאית</div>
+                <h1 class="text-xl font-bold text-gray-800">מערכת חישוב נוכחות</h1>
+                <div class="w-24"></div> <!-- Spacer for center alignment -->
+            </div>
+        </div>
+    </nav>
+
+    <div id="app-container">
+        <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+            <header class="text-center mb-8">
+                <h1 class="text-3xl sm:text-4xl font-bold text-blue-800">מחשבון מלגות עם היסטוריה</h1>
+                <p class="text-gray-600 mt-2">הכלי שומר את כל חישובי העבר ומאפשר לחזור אליהם בכל עת.</p>
+            </header>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Control Panel -->
+                <div class="lg:col-span-1 bg-white p-6 rounded-xl shadow-lg h-fit">
+                    <h2 class="text-2xl font-semibold mb-6 border-b pb-3 text-gray-700">הגדרות חישוב</h2>
+                    
+                    <div class="mb-4">
+                        <label class="block text-lg font-medium text-gray-700 mb-2">1. העלאת קובץ חדש</label>
+                        <div id="drop-zone" class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-blue-500 hover:bg-gray-50 transition-all">
+                            <input type="file" id="file-upload" class="hidden" accept=".csv, .txt">
+                            <p id="file-name-display" class="text-gray-500">גרור קובץ לכאן או לחץ לבחירה</p>
+                        </div>
+                    </div>
+
+                    <!-- Load Previous Calculation Section -->
+                    <div id="load-history-section" class="hidden mb-4 p-4 bg-gray-50 rounded-lg border">
+                        <label for="history-select" class="block text-lg font-medium text-gray-700 mb-2">או טעינת חישוב קודם</label>
+                        <div class="flex gap-2">
+                            <select id="history-select" class="block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                <!-- Options populated by JS -->
+                            </select>
+                            <button id="load-history-btn" class="bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700">טען</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-lg font-medium text-gray-700 mb-2">2. פרמטרים לחישוב</label>
+                        <div class="mb-3">
+                            <label for="monthly-stipend" class="text-sm font-medium">סכום מלגה חודשית מלאה (בש"ח)</label>
+                            <input type="number" id="monthly-stipend" value="1500" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="workable-days" class="text-sm font-medium">ימי לימוד בחודש</label>
+                            <input type="number" id="workable-days" value="22" min="1" max="31" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                         <label class="block text-lg font-medium text-gray-700 mb-2">3. לוחות זמנים</label>
+                         <div id="time-periods-container" class="space-y-4"></div>
+                         <button id="add-period-btn" class="mt-3 w-full text-sm bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">+ הוסף תקופת זמן</button>
+                    </div>
+                    
+                    <div class="mt-8 flex gap-2">
+                        <button id="calculate-btn" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>חשב מלגות</button>
+                        <button id="save-btn" title="שמור את החישוב הנוכחי בהיסטוריה" class="p-3 bg-green-500 text-white rounded-lg hover:bg-green-600 hidden" disabled>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" /></svg>
+                        </button>
+                        <button id="clear-storage-btn" title="מחק את כל ההיסטוריה השמורה" class="p-3 bg-red-500 text-white rounded-lg hover:bg-red-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Results Display -->
+                <div class="lg:col-span-2">
+                    <div id="results-container" class="bg-white p-6 rounded-xl shadow-lg min-h-[400px] flex flex-col justify-center items-center">
+                        <div id="initial-message" class="text-center">
+                             <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                            <h3 class="mt-2 text-lg font-medium text-gray-900">תוצאות החישוב יוצגו כאן</h3>
+                            <p class="mt-1 text-sm text-gray-500">העלה קובץ חדש או טען חישוב קודם כדי להתחיל.</p>
+                        </div>
+                        <div id="loader" class="hidden loader"></div>
+                        <div id="error-message" class="hidden text-center text-red-600 bg-red-100 p-4 rounded-lg"></div>
+                        <div id="results-table-container" class="hidden w-full">
+                            <div class="flex justify-between items-center mb-4 flex-wrap gap-4">
+                                <h2 id="results-title" class="text-2xl font-semibold text-gray-700">סיכום מלגות</h2>
+                                <div class="flex gap-2">
+                                    <button id="export-btn" class="bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700">ייצא ל-CSV</button>
+                                    <button id="reports-btn" class="bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700">הפקת דוחות</button>
+                                </div>
+                            </div>
+                            <div id="summary-bar" class="mb-4 p-3 bg-blue-50 rounded-lg text-center text-blue-800 font-medium"></div>
+                            <div class="overflow-x-auto">
+                                <table id="results-table" class="min-w-full divide-y divide-gray-200">
+                                    <thead class="bg-gray-50"><tr><th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">שם האברך</th><th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">סה"כ שעות</th><th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">מלגה בסיסית</th><th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">מלגת בונוס</th><th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">מלגה סופית</th></tr></thead>
+                                    <tbody id="results-body" class="bg-white divide-y divide-gray-200"></tbody>
+                                    <tfoot class="bg-gray-100 font-bold"><tr id="totals-row"></tr></tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Report Generation Modal -->
+    <div id="report-modal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">הפקת דוחות</h3>
+                <div class="mt-4 px-7 py-3 space-y-4">
+                    <button id="generate-general-report" class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600">הפק דוח סיכום כללי</button>
+                    <button id="generate-individual-reports" class="w-full bg-teal-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-600">הפק דוחות אישיים</button>
+                </div>
+                <div class="items-center px-4 py-3">
+                    <button id="close-modal-btn" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300">סגור</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="printable-area"></div>
+
+    <script type="module">
+        // מערכת חישוב מלגות - API only
+        console.log('🚀 Initializing Scholarship Calculator - API mode');
+
+        // DOM Elements
+        const fileUpload = document.getElementById('file-upload'), calculateBtn = document.getElementById('calculate-btn'), clearStorageBtn = document.getElementById('clear-storage-btn'), monthlyStipendInput = document.getElementById('monthly-stipend'), workableDaysInput = document.getElementById('workable-days'), saveBtn = document.getElementById('save-btn'), timePeriodsContainer = document.getElementById('time-periods-container'), addPeriodBtn = document.getElementById('add-period-btn'), resultsContainer = document.getElementById('results-container'), initialMessage = document.getElementById('initial-message'), loader = document.getElementById('loader'), errorMessage = document.getElementById('error-message'), resultsTableContainer = document.getElementById('results-table-container'), resultsBody = document.getElementById('results-body'), totalsRow = document.getElementById('totals-row'), exportBtn = document.getElementById('export-btn'), reportsBtn = document.getElementById('reports-btn'), dropZone = document.getElementById('drop-zone'), fileNameDisplay = document.getElementById('file-name-display'), summaryBar = document.getElementById('summary-bar'), reportModal = document.getElementById('report-modal'), closeModalBtn = document.getElementById('close-modal-btn'), generateGeneralReportBtn = document.getElementById('generate-general-report'), generateIndividualReportsBtn = document.getElementById('generate-individual-reports'), printableArea = document.getElementById('printable-area'), resultsTitle = document.getElementById('results-title'), loadHistoryBtn = document.getElementById('load-history-btn');
+
+        let fileContent = null, processedData = [], rawStudentData = null, calculationParams = {};
+
+        // --- Event Listeners ---
+        dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('border-blue-500', 'bg-gray-50'); });
+        dropZone.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.classList.remove('border-blue-500', 'bg-gray-50'); });
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('border-blue-500', 'bg-gray-50');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                fileUpload.files = files;
+                handleFileSelect({ target: { files: files } });
+            }
+        });
+        dropZone.addEventListener('click', () => fileUpload.click());
+        fileUpload.addEventListener('change', handleFileSelect);
+        calculateBtn.addEventListener('click', handleCalculation);
+        saveBtn.addEventListener('click', () => {
+            if (processedData.length > 0) {
+                saveStateToLocalStorage();
+                saveBtn.disabled = true;
+                saveBtn.classList.add('bg-gray-500');
+                setTimeout(() => {
+                    saveBtn.classList.remove('bg-gray-500');
+                    alert('✅ החישוב נשמר בהצלחה!');
+                }, 500);
+            }
+        });
+        exportBtn.addEventListener('click', exportToCSV);
+        reportsBtn.addEventListener('click', () => reportModal.classList.remove('hidden'));
+        closeModalBtn.addEventListener('click', () => reportModal.classList.add('hidden'));
+        generateGeneralReportBtn.addEventListener('click', generateGeneralReport);
+        generateIndividualReportsBtn.addEventListener('click', generateIndividualReports);
+        addPeriodBtn.addEventListener('click', addTimePeriod);
+        loadHistoryBtn.addEventListener('click', loadSelectedHistory);
+        document.addEventListener('DOMContentLoaded', initializeApp);
+
+        // --- App Initialization ---
+        function initializeApp() {
+            populateHistoryDropdown();
+            addDefaultTimePeriod();
+        }
+        
+        // --- Core Functions ---
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            fileNameDisplay.textContent = file.name;
+            fileNameDisplay.classList.remove('text-green-700', 'text-indigo-700');
+            fileNameDisplay.classList.add('text-blue-700', 'font-semibold');
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                fileContent = e.target.result;
+                calculateBtn.disabled = false;
+                resetResultsView();
+            };
+            reader.onerror = () => { showError("שגיאה בקריאת הקובץ."); fileContent = null; calculateBtn.disabled = true; };
+            reader.readAsText(file, 'UTF-8');
+        }
+
+        function handleCalculation() {
+            // בדוק אם יש studentData מהשרת או fileContent חדש
+            if (!rawStudentData && !fileContent) { showError("📄 נא להעלות קובץ נוכחות תחילה כדי לבצע חישוב."); return; }
+            
+            showLoader();
+            setTimeout(() => {
+                try {
+                    let studentData, month, year;
+                    
+                    // אם יש fileContent, פרסר אותו (עדכון מקובץ חדש)
+                    if (fileContent) {
+                        const parsed = parseAndAggregateData(fileContent);
+                        studentData = parsed.studentData;
+                        month = parsed.month;
+                        year = parsed.year;
+                        rawStudentData = studentData;
+                        console.log('📄 Using new file data');
+                    } else {
+                        // אחרת, השתמש בנתונים שטענו מהשרת
+                        studentData = rawStudentData;
+                        month = calculationParams.month;
+                        year = calculationParams.year;
+                        console.log('📥 Using server data - rawStudentData:', rawStudentData);
+                        console.log('📥 First student:', Array.from(rawStudentData.entries())[0]);
+                        
+                        // בדיקה עמוקה של המבנה
+                        for (const [id, data] of rawStudentData.entries()) {
+                            console.log(`Student ${id}:`, data);
+                            console.log(`  - Name: ${data.name}`);
+                            console.log(`  - Daily Sessions Type: ${data.dailySessions instanceof Map ? 'Map' : typeof data.dailySessions}`);
+                            console.log(`  - Daily Sessions Size: ${data.dailySessions.size}`);
+                            if (data.dailySessions.size > 0) {
+                                const firstSession = Array.from(data.dailySessions.entries())[0];
+                                console.log(`  - First Session Date: ${firstSession[0]}, Sessions:`, firstSession[1]);
+                            }
+                            break; // רק תלמיד ראשון
+                        }
+                    }
+                     if (!month || !year) throw new Error("לא ניתן היה לקבוע את החודש והשנה מהקובץ.");
+                    const monthlyStipend = parseFloat(monthlyStipendInput.value) || 0;
+                    const workableDaysInMonth = parseInt(workableDaysInput.value) || 20;
+                    if (workableDaysInMonth === 0) throw new Error("לא ניתן להגדיר 0 ימי לימוד בחודש.");
+                    const timePeriods = getTimePeriodsFromUI();
+                    const dailyRate = monthlyStipend / workableDaysInMonth;
+                    console.log('💰 Daily Rate:', dailyRate, 'Monthly Stipend:', monthlyStipend, 'Workable Days:', workableDaysInMonth);
+                    
+                    calculationParams = { month, year, workableDaysInMonth, dailyRate };
+                    processedData = calculateStipends(studentData, dailyRate, timePeriods);
+                    console.log('✅ Processed Data:', processedData);
+                    displayResults(processedData, workableDaysInMonth, dailyRate, `סיכום מלגות - ${month}/${year}`);
+                    
+                    // הצג את כפתור השמירה
+                    saveBtn.classList.remove('hidden');
+                    saveBtn.disabled = false;
+                } catch (error) {
+                    console.error("Calculation Error:", error);
+                    showError(`שגיאה בעיבוד הנתונים: ${error.message}.`);
+                }
+            }, 50);
+        }
+
+        function parseAndAggregateData(content) {
+            const lines = content.split(/\r\n|\n/), studentData = new Map();
+            let maxDate = null;
+            for (let i = 1; i < lines.length; i++) {
+                const line = lines[i].trim();
+                if (!line) continue;
+                const columns = line.split('\t');
+                if (columns.length < 5) continue;
+                const id = (columns[0] || '').replace(/[^0-9]/g, '');
+                if (!id) continue;
+                const arrivalDateTime = parseDateTime(columns[3]), departureDateTime = parseDateTime(columns[4]);
+                if (!arrivalDateTime || !departureDateTime) continue;
+                if (!maxDate || arrivalDateTime > maxDate) maxDate = arrivalDateTime;
+                const fullName = `${(columns[2] || '').trim()} ${(columns[1] || '').trim()}`.trim();
+                const dateKey = `${arrivalDateTime.getFullYear()}-${String(arrivalDateTime.getMonth() + 1).padStart(2, '0')}-${String(arrivalDateTime.getDate()).padStart(2, '0')}`;
+                if (!studentData.has(id)) studentData.set(id, { name: fullName, dailySessions: new Map() });
+                if (!studentData.get(id).dailySessions.has(dateKey)) studentData.get(id).dailySessions.set(dateKey, []);
+                studentData.get(id).dailySessions.get(dateKey).push({ start: arrivalDateTime, end: departureDateTime });
+            }
+            if (studentData.size === 0) throw new Error("לא נמצאו נתונים תקינים בקובץ.");
+            return { studentData, month: maxDate.getMonth() + 1, year: maxDate.getFullYear() };
+        }
+        
+        function parseDateTime(dateTimeStr) {
+            const parts = dateTimeStr.split(' ');
+            if (parts.length < 2) return null;
+            const dateParts = parts[0].split('/'), timeParts = parts[1].split(':');
+            if (dateParts.length !== 3 || timeParts.length < 2) return null;
+            return new Date(parseInt(dateParts[2], 10) + 2000, parseInt(dateParts[1], 10) - 1, parseInt(dateParts[0], 10), parseInt(timeParts[0], 10), parseInt(timeParts[1], 10), timeParts.length > 2 ? parseInt(timeParts[2], 10) : 0);
+        }
+
+        function calculateDailySlotValue(sessions, dailyRate, period, dateKey) {
+            const [year, month, day] = dateKey.split('-').map(Number), [sH, sM] = period.sederStart.split(':').map(Number);
+            const primeStart = new Date(year, month - 1, day, sH, sM), primeEnd = new Date(primeStart.getTime() + 3600000), regularEnd = new Date(primeStart.getTime() + 10800000);
+            const primeRatePerHour = dailyRate * 0.5, regularRatePerHour = dailyRate * 0.25;
+            let totalValue = 0;
+            sessions.forEach(session => {
+                totalValue += (Math.max(0, (Math.min(session.end, primeEnd) - Math.max(session.start, primeStart))) / 3600000) * primeRatePerHour;
+                totalValue += (Math.max(0, (Math.min(session.end, regularEnd) - Math.max(session.start, primeEnd))) / 3600000) * regularRatePerHour;
+            });
+            return totalValue;
+        }
+
+        function getTimePeriodForDate(date, timePeriods) {
+            let applicablePeriod = timePeriods[0];
+            
+            // נקי את התאריך מהשעות להשוואה הוגנת
+            const dateOnly = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+            
+            for (let i = 1; i < timePeriods.length; i++) {
+                // נקי גם את תאריך התחילה
+                const startDateOnly = new Date(timePeriods[i].startDate.getFullYear(), timePeriods[i].startDate.getMonth(), timePeriods[i].startDate.getDate());
+                
+                if (dateOnly >= startDateOnly) {
+                    applicablePeriod = timePeriods[i];
+                } else {
+                    break;
+                }
+            }
+            return applicablePeriod;
+        }
+
+        function calculateStipends(studentData, dailyRate, timePeriods) {
+            const results = [];
+            console.log('🧮 calculateStipends - Input studentData:', studentData);
+            console.log('🧮 calculateStipends - dailyRate:', dailyRate);
+            console.log('🧮 calculateStipends - timePeriods:', timePeriods);
+            
+            for (const [id, data] of studentData.entries()) {
+                console.log(`🧮 Processing student ${id} (${data.name})`);
+                let totalMinutes = 0, baseStipend = 0;
+                const weeklyData = new Map();
+                
+                console.log(`  Daily Sessions for ${id}:`, data.dailySessions);
+                
+                data.dailySessions.forEach((sessions, dateKey) => {
+                    console.log(`    Date ${dateKey}: ${sessions.length} sessions`);
+                    const [y, m, d] = dateKey.split('-').map(Number), currentDate = new Date(y, m - 1, d);
+                    const dailyValue = calculateDailySlotValue(sessions, dailyRate, getTimePeriodForDate(currentDate, timePeriods), dateKey);
+                    console.log(`      Daily Value: ${dailyValue}`);
+                    baseStipend += dailyValue;
+                    sessions.forEach(s => { totalMinutes += (s.end - s.start) / 60000; });
+                    const weekStart = new Date(currentDate);
+                    weekStart.setDate(currentDate.getDate() - currentDate.getDay());
+                    const weekKey = `${weekStart.getFullYear()}-${weekStart.getMonth() + 1}-${weekStart.getDate()}`;
+                    if (!weeklyData.has(weekKey)) weeklyData.set(weekKey, { daysAttended: new Set(), valueSum: 0 });
+                    weeklyData.get(weekKey).daysAttended.add(dateKey);
+                    weeklyData.get(weekKey).valueSum += dailyValue;
+                });
+                console.log(`  Total baseStipend for ${id}: ${baseStipend}, totalMinutes: ${totalMinutes}`);
+                let bonusStipend = 0;
+                weeklyData.forEach((week, weekKey) => {
+                    let daysCount = week.daysAttended.size;
+                    let valueSum = week.valueSum;
+                    // בדיקה אם זה השבוע הראשון של החודש
+                    const [wYear, wMonth, wDay] = weekKey.split('-').map(Number);
+                    const isFirstWeekOfMonth = wDay <= 6;
+                    if (isFirstWeekOfMonth) {
+                        // נשלוף את נתוני השבוע האחרון של החודש הקודם מה-localStorage
+                        try {
+                            const index = JSON.parse(localStorage.getItem(STORAGE_INDEX_KEY) || '[]');
+                            if (index.length > 0) {
+                                // נניח שהחישוב האחרון הוא החודש הקודם
+                                const lastKey = index[index.length - 1].key;
+                                const prevMonthData = JSON.parse(localStorage.getItem(lastKey));
+                                if (prevMonthData && prevMonthData.studentData && prevMonthData.studentData[id]) {
+                                    const prevSessions = prevMonthData.studentData[id].dailySessions;
+                                    for (const prevDateKey in prevSessions) {
+                                        const [py, pm, pd] = prevDateKey.split('-').map(Number);
+                                        const prevDate = new Date(py, pm - 1, pd);
+                                        // האם היום שייך לאותו שבוע קלנדרי?
+                                        const prevWeekStart = new Date(prevDate);
+                                        prevWeekStart.setDate(prevDate.getDate() - prevDate.getDay());
+                                        const prevWeekKey = `${prevWeekStart.getFullYear()}-${prevWeekStart.getMonth() + 1}-${prevWeekStart.getDate()}`;
+                                        if (prevWeekKey === weekKey) {
+                                            daysCount++;
+                                            valueSum += calculateDailySlotValue(prevSessions[prevDateKey], dailyRate, getTimePeriodForDate(prevDate, timePeriods), prevDateKey);
+                                        }
+                                    }
+                                }
+                            }
+                        } catch (e) {}
+                    }
+                    if (daysCount === 5) {
+                        bonusStipend += valueSum / 5;
+                    } else if (daysCount === 6) {
+                        bonusStipend += valueSum / 6;
+                    }
+                });
+                results.push({ id, name: data.name, totalHours: totalMinutes / 60, baseStipend, bonusStipend, finalStipend: baseStipend + bonusStipend });
+            }
+            return results.sort((a, b) => b.finalStipend - a.finalStipend);
+        }
+        
+        // --- UI & Dynamic Period Functions ---
+        function addDefaultTimePeriod() { timePeriodsContainer.innerHTML += `<div class="time-period-block border border-gray-200 p-3 rounded-lg"><p class="text-sm font-medium text-gray-600 mb-2">ברירת מחדל</p><div><label class="text-xs font-medium">שעת תחילת הסדר</label><input type="time" value="01:30" class="time-input seder-start mt-1 block w-full px-2 py-1 bg-gray-50 border border-gray-300 rounded-md text-sm"></div></div>`; }
+        function addTimePeriod() {
+            const newPeriodBlock = document.createElement('div');
+            newPeriodBlock.className = 'time-period-block border border-gray-200 p-3 rounded-lg relative';
+            newPeriodBlock.innerHTML = `<button class="remove-period-btn absolute top-1 left-1 text-red-500 hover:text-red-700">&times;</button><div><label class="text-xs font-medium">החל מתאריך</label><input type="date" class="time-input start-date mt-1 block w-full px-2 py-1 bg-gray-50 border-gray-300 rounded-md text-sm" required></div><div><label class="text-xs font-medium">שעת תחילת הסדר</label><input type="time" value="02:00" class="time-input seder-start mt-1 block w-full px-2 py-1 bg-gray-50 border-gray-300 rounded-md text-sm"></div>`;
+            timePeriodsContainer.appendChild(newPeriodBlock);
+            newPeriodBlock.querySelector('.remove-period-btn').addEventListener('click', () => newPeriodBlock.remove());
+        }
+        function getTimePeriodsFromUI() {
+            const periods = [];
+            timePeriodsContainer.querySelectorAll('.time-period-block').forEach(block => {
+                const startDateInput = block.querySelector('.start-date');
+                periods.push({ startDate: startDateInput ? startDateInput.valueAsDate : new Date(0), sederStart: block.querySelector('.seder-start').value });
+            });
+            return periods.sort((a, b) => a.startDate - b.startDate);
+        }
+        function displayResults(data, workableDaysInMonth, dailyRate, title) {
+            hideAllViews(); resultsTableContainer.classList.remove('hidden');
+            resultsTitle.textContent = title;
+            resultsBody.innerHTML = '';
+            summaryBar.innerHTML = `ימי עבודה בחודש: <span class="font-bold">${workableDaysInMonth}</span> | שווי בסיס ליום לימוד מלא: <span class="font-bold">${dailyRate.toFixed(2)} ₪</span>`;
+            let totalHours = 0, totalBase = 0, totalBonus = 0, totalFinal = 0;
+            data.forEach(s => {
+                resultsBody.innerHTML += `<tr><td class="px-6 py-4 text-sm font-medium">${s.name}</td><td class="px-6 py-4 text-sm">${s.totalHours.toFixed(2)}</td><td class="px-6 py-4 text-sm">${s.baseStipend.toFixed(2)} ₪</td><td class="px-6 py-4 text-sm text-green-600 font-medium">${s.bonusStipend.toFixed(2)} ₪</td><td class="px-6 py-4 text-sm font-bold text-blue-600">${s.finalStipend.toFixed(2)} ₪</td></tr>`;
+                totalHours += s.totalHours; totalBase += s.baseStipend; totalBonus += s.bonusStipend; totalFinal += s.finalStipend;
+            });
+            totalsRow.innerHTML = `<td class="px-6 py-4 font-bold">סה"כ</td><td class="px-6 py-4 font-bold">${totalHours.toFixed(2)}</td><td class="px-6 py-4 font-bold">${totalBase.toFixed(2)} ₪</td><td class="px-6 py-4 font-bold text-green-700">${totalBonus.toFixed(2)} ₪</td><td class="px-6 py-4 text-base font-extrabold text-blue-800">${totalFinal.toFixed(2)} ₪</td>`;
+        }
+        function showLoader() { hideAllViews(); loader.classList.remove('hidden'); }
+        function showError(message) { hideAllViews(); errorMessage.textContent = message; errorMessage.classList.remove('hidden'); }
+        function resetResultsView() { hideAllViews(); initialMessage.classList.remove('hidden'); }
+        function hideAllViews() { initialMessage.classList.add('hidden'); loader.classList.add('hidden'); errorMessage.classList.add('hidden'); resultsTableContainer.classList.add('hidden'); }
+
+        // --- Persistence Functions (API only) ---
+        async function saveStateToLocalStorage() {
+            if (!processedData || processedData.length === 0) return;
+            
+            const { year, month } = calculationParams;
+            
+            try {
+                console.log('💾 Saving calculation state to API');
+                
+                // שמירה ב-API בלבד
+                const apiResponse = await fetch('http://localhost:3001/api/scholarships', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        user_id: 'default',
+                        month: `${year}-${String(month).padStart(2, '0')}`,
+                        amount: processedData.reduce((sum, student) => sum + student.finalStipend, 0),
+                        details: {
+                            calculationId: `${year}_${String(month).padStart(2, '0')}`,
+                            studentCount: processedData.length,
+                            totalHours: processedData.reduce((sum, student) => sum + student.totalHours, 0),
+                            monthlyStipend: parseFloat(monthlyStipendInput.value),
+                            workableDays: calculationParams.workableDaysInMonth,
+                            timePeriods: getTimePeriodsFromUI().map(p => ({ ...p, startDate: p.startDate.toISOString() })),
+                            processedData: processedData,
+                            rawStudentData: rawStudentData ? (() => {
+                                const converted = {};
+                                for (const [studentId, studentInfo] of rawStudentData.entries()) {
+                                    converted[studentId] = {
+                                        name: studentInfo.name,
+                                        dailySessions: Object.fromEntries(
+                                            Array.from(studentInfo.dailySessions.entries()).map(([dateKey, sessions]) => [
+                                                dateKey,
+                                                sessions.map(s => ({
+                                                    start: s.start.toISOString(),
+                                                    end: s.end.toISOString()
+                                                }))
+                                            ])
+                                        )
+                                    };
+                                }
+                                return converted;
+                            })() : null
+                        }
+                    })
+                });
+                
+                if (!apiResponse.ok) {
+                    throw new Error(`API error: ${apiResponse.status}`);
+                }
+                
+                console.log('✅ Calculation saved to API');
+                populateHistoryDropdown();
+                
+            } catch (e) { 
+                console.error("❌ Error saving state:", e); 
+                alert(`שגיאה בשמירת הנתונים: ${e.message}`); 
+            }
+        }
+
+        function populateHistoryDropdown() {
+            const historySection = document.getElementById('load-history-section');
+            const historySelect = document.getElementById('history-select');
+            
+            try {
+                console.log('📋 Loading calculation history from API');
+                
+                fetch('http://localhost:3001/api/scholarships')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`API error: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(apiData => {
+                        if (!Array.isArray(apiData)) {
+                            console.warn('API did not return an array');
+                            historySection.classList.add('hidden');
+                            return;
+                        }
+                        
+                        // יצור מפה של רשומה אחת לכל חודש (הרשומה החדשה ביותר)
+                        const monthMap = new Map();
+                        
+                        apiData.forEach(item => {
+                            const month = item.month; // YYYY-MM
+                            const existing = monthMap.get(month);
+                            if (!existing || new Date(item.timestamp) > new Date(existing.timestamp)) {
+                                monthMap.set(month, item);
+                            }
+                        });
+                        
+                        const history = Array.from(monthMap.values())
+                            .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+                        
+                        if (history.length === 0) { 
+                            historySection.classList.add('hidden'); 
+                            return; 
+                        }
+                        
+                        historySelect.innerHTML = history.map(item => {
+                            const [year, month] = item.month.split('-');
+                            return `<option value="${item.id}">חודש ${month}/${year} (${new Date(item.timestamp).toLocaleDateString('he-IL')})</option>`;
+                        }).join('');
+                        
+                        console.log(`✅ Loaded ${history.length} calculation(s) from API`);
+                        historySection.classList.remove('hidden');
+                    })
+                    .catch(error => {
+                        console.error('❌ Error loading from API:', error);
+                        console.log('📦 No data available');
+                        historySection.classList.add('hidden');
+                    });
+                
+            } catch (error) {
+                console.error('שגיאה בטעינת היסטוריה:', error);
+                historySection.classList.add('hidden');
+            }
+        }
+        
+        function loadSelectedHistory() {
+            const selectedId = document.getElementById('history-select').value;
+            if (!selectedId) return;
+            
+            console.log(`📥 Loading calculation ${selectedId} from API`);
+            
+            fetch(`http://localhost:3001/api/scholarships/${selectedId}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`API error: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (!data.details) {
+                        throw new Error('Invalid data format');
+                    }
+                    
+                    const details = data.details;
+                    const [year, month] = data.month.split('-');
+                    
+                    // עדכן את הממשק
+                    monthlyStipendInput.value = details.monthlyStipend || 1500;
+                    workableDaysInput.value = details.workableDays || 20;
+                    
+                    // שחזר את תקxxxxxxxxן
+                    if (details.timePeriods && Array.isArray(details.timePeriods) && details.timePeriods.length > 0) {
+                        restoreTimePeriodsUI(details.timePeriods);
+                    } else {
+                        // אם אין תקופות שמורות, הוסף רק ברירת מחדל אחת
+                        timePeriodsContainer.innerHTML = '';
+                        addDefaultTimePeriod();
+                    }
+                    
+                    // הצג את התוצאות
+                    calculationParams = {
+                        month: parseInt(month),
+                        year: parseInt(year),
+                        workableDaysInMonth: details.workableDays,
+                        dailyRate: details.monthlyStipend / details.workableDays
+                    };
+                    
+                    processedData = details.processedData || [];
+                    displayResults(processedData, details.workableDays, calculationParams.dailyRate, `סיכום מלגות - ${month}/${year}`);
+                    
+                    // שחזר את rawStudentData מהשרת כדי לאפשר חישוב מחדש
+                    if (details.rawStudentData) {
+                        rawStudentData = new Map();
+                        for (const [studentId, studentInfo] of Object.entries(details.rawStudentData)) {
+                            // dailySessions צריך להיות Map כאשר המפתח הוא dateKey (YYYY-MM-DD)
+                            // והערך הוא array של {start: Date, end: Date}
+                            const dailySessions = new Map();
+                            if (studentInfo.dailySessions) {
+                                for (const [dateKey, sessions] of Object.entries(studentInfo.dailySessions)) {
+                                    // המרה של sessions חזרה ל-Date objects
+                                    const parsedSessions = sessions.map(s => ({
+                                        start: new Date(s.start),
+                                        end: new Date(s.end)
+                                    }));
+                                    dailySessions.set(dateKey, parsedSessions);
+                                }
+                            }
+                            rawStudentData.set(studentId, {
+                                name: studentInfo.name,
+                                dailySessions: dailySessions
+                            });
+                        }
+                    }
+                    
+                    // הפעל את כפתור חשב כדי לאפשר חישוב מחדש
+                    calculateBtn.disabled = false;
+                    
+                    saveBtn.classList.remove('hidden');
+                    saveBtn.disabled = false;
+                    
+                    fileNameDisplay.textContent = `נתונים נטענו מהשרת (${new Date(data.timestamp).toLocaleDateString('he-IL')}) - אתה יכול לשנות וללחוץ 'חשב מחדש'`;
+                    fileNameDisplay.classList.remove('text-blue-700');
+                    fileNameDisplay.classList.add('text-indigo-700', 'font-semibold');
+                    
+                    console.log('✅ Data loaded successfully');
+                })
+                .catch(error => {
+                    console.error('❌ Error loading from API:', error);
+                    alert('שגיאה בטעינת נתונים מהשרת');
+                });
+        }
+
+        
+        function restoreTimePeriodsUI(periods) {
+            timePeriodsContainer.innerHTML = '';
+            
+            if (!periods || !Array.isArray(periods) || periods.length === 0) { 
+                addDefaultTimePeriod(); 
+                return; 
+            }
+            
+            let hasDefault = false;
+            
+            periods.forEach(period => {
+                const startDate = new Date(period.startDate);
+                
+                // בדוק אם זו תקופת ברירת מחדל (ללא תאריך ממשי)
+                if (startDate.getFullYear() < 1971) {
+                    // ברירת מחדל - הוסף רק אחת
+                    if (!hasDefault) {
+                        addDefaultTimePeriod();
+                        const defaultBlock = timePeriodsContainer.querySelector('.seder-start');
+                        if (defaultBlock) {
+                            defaultBlock.value = period.sederStart || '01:30';
+                        }
+                        hasDefault = true;
+                    }
+                } else {
+                    // תקופה עם תאריך - הוסף
+                    addTimePeriod();
+                    const newBlock = timePeriodsContainer.lastElementChild;
+                    newBlock.querySelector('.start-date').valueAsDate = startDate;
+                    newBlock.querySelector('.seder-start').value = period.sederStart || '02:00';
+                }
+            });
+        }
+
+        // --- Reporting & Printing Functions ---
+        function getCalculationExplanationHTML(params) {
+            const monthlyStipend = parseFloat(monthlyStipendInput.value).toFixed(2), dailyRate = params.dailyRate.toFixed(2), workableDays = params.workableDaysInMonth;
+            return `<div class="explanation-box mt-6 pt-4 border-t-2 border-dashed" dir="rtl">
+                    <h4 class="text-md font-bold mb-2">הסבר על אופן חישוב המלגה:</h4>
+                    <ul class="list-disc list-inside text-xs space-y-1 text-gray-700">
+                        <li>סכום המלגה החודשי (${monthlyStipend} ₪) מחולק במקסימום ימי נוכחות בחודש הנוכחי (${workableDays}) לקבלת שווי המלגה לסדר מלא (${dailyRate} ₪).</li>
+                        <li>המלגה לשעת הלימוד הראשונה בכל סדר שווה 50% משווי המלגה לסדר המלא.</li>
+                        <li>המלגה בשעתיים הבאות שווה 25% משווי המלגה לסדר המלא, (כל אחת).</li>
+                        <li>המלגה מחושבת באופן יחסי לפי זמן הנוכחות.</li>
+                        <li><b>בונוס שבועי:</b> על נוכחות של 5 ימים בשבוע, מתקבל בונוס השווה לממוצע של חמשת ימי הנוכחות באותו שבוע.</li>
+                    </ul>
+                </div>`;
+        }
+
+        function generateGeneralReport() {
+            if (!processedData.length) { alert("אין נתונים להפקת דוח."); return; }
+            const { month, year } = calculationParams;
+            printableArea.innerHTML = `<div class="report-page p-4" dir="rtl"><h1 class="text-2xl font-bold text-center mb-2">דוח מלגות כללי</h1><h2 class="text-lg text-center text-gray-600 mb-6">חודש ${month}/${year}</h2>${document.getElementById('results-table').outerHTML}${getCalculationExplanationHTML(calculationParams)}</div>`;
+            window.print();
+            reportModal.classList.add('hidden');
+        }
+
+        function generateIndividualReports() {
+            if (!processedData.length) { alert("אין נתונים להפקת דוחות."); return; }
+            const { month, year } = calculationParams, explanationHtml = getCalculationExplanationHTML(calculationParams);
+            let allReportsHtml = '';
+            processedData.forEach(student => {
+                const sortedSessions = [...rawStudentData.get(student.id).dailySessions.entries()].sort((a,b) => new Date(a[0]) - new Date(b[0]));
+                    let dailyDetailsHtml = `<table class="min-w-full mt-4 border" style="font-size:10px;"><thead class="bg-gray-100"><tr><th class="px-1 py-0 border">תאריך</th><th class="px-1 py-0 border">כניסה</th><th class="px-1 py-0 border">יציאה</th><th class="px-1 py-0 border">זמן</th></tr></thead><tbody>`;
+                    sortedSessions.forEach(([dateKey, sessions]) => sessions.forEach(s => {
+                        dailyDetailsHtml += `<tr style="height:18px"><td class="px-1 py-0 border">${new Date(dateKey).toLocaleDateString('he-IL')}</td><td class="px-1 py-0 border">${s.start.toLocaleTimeString('he-IL',{hour:'2-digit',minute:'2-digit'})}</td><td class="px-1 py-0 border">${s.end.toLocaleTimeString('he-IL',{hour:'2-digit',minute:'2-digit'})}</td><td class="px-1 py-0 border">${((s.end - s.start)/3600000).toFixed(2)} שעות</td></tr>`;
+                    }));
+                    dailyDetailsHtml += `</tbody></table>`;
+                    allReportsHtml += `<div class="report-page p-4 border-2 border-black m-2 text-sm" dir="rtl"><h1 class="text-2xl font-bold text-center mb-2">סיכום מלגה אישי</h1><h2 class="text-base text-center text-gray-700 mb-6">חודש ${month}/${year}</h2><div class="text-base space-y-2 mb-4"><p><strong>שם:</strong> ${student.name}</p><p><strong>ת.ז:</strong> ${student.id}</p></div><div class="grid grid-cols-2 gap-2 text-center mb-6"><div class="p-2 bg-blue-50 rounded-lg"><p class="text-sm">מלגה בסיסית</p><p class="text-lg font-bold">${student.baseStipend.toFixed(2)} ₪</p></div><div class="p-2 bg-green-50 rounded-lg"><p class="text-sm">מלגת בונוס</p><p class="text-lg font-bold">${student.bonusStipend.toFixed(2)} ₪</p></div></div><div class="p-2 bg-gray-100 rounded-lg text-center mb-6"><p class="text-sm">סה"כ מלגה לתשלום</p><p class="text-xl font-extrabold text-blue-800">${student.finalStipend.toFixed(2)} ₪</p></div><h3 class="text-base font-bold mt-4 mb-2">פירוט נוכחות:</h3><div>${dailyDetailsHtml}</div>${explanationHtml}</div>`;
+            });
+            printableArea.innerHTML = allReportsHtml;
+            window.print();
+            reportModal.classList.add('hidden');
+        }
+
+        // --- Export Functionality ---
+        function exportToCSV() {
+            if (!processedData.length) { alert("אין נתונים לייצוא."); return; }
+            const { month, year } = calculationParams;
+            const headers = ['שם האברך', 'סה"כ שעות', 'מלגה בסיסית (ש"ח)', 'מלגת בונוס (ש"ח)', 'מלגה סופית (ש"ח)'];
+            const rows = processedData.map(s => [`"${s.name}"`, s.totalHours.toFixed(2), s.baseStipend.toFixed(2), s.bonusStipend.toFixed(2), s.finalStipend.toFixed(2)]);
+            const csvContent = "data:text/csv;charset=utf-8,\uFEFF" + headers.join(",") + "\r\n" + rows.map(e => e.join(",")).join("\r\n");
+            const link = document.createElement("a");
+            link.setAttribute("href", encodeURI(csvContent));
+            link.setAttribute("download", `סיכום_מלגות_${month}-${year}.csv`);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>

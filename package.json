@@ -1,0 +1,16 @@
+{
+  "name": "scholarship-calculator",
+  "version": "1.0.0",
+  "description": "Scholarship calculation system - Standalone version with independent server",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["scholarship", "calculator", "education", "stipend"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
