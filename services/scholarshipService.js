@@ -1,5 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
+const logger = require('../utils/logger');
 
 class ScholarshipService {
   #dataDir;
@@ -19,7 +20,7 @@ class ScholarshipService {
     try {
       await fs.mkdir(this.#dataDir, { recursive: true });
     } catch (error) {
-      console.error("Error creating data directory:", error);
+      logger.error("Error creating data directory:", error);
     }
   }
 
@@ -39,7 +40,7 @@ class ScholarshipService {
         await this.#_saveData(dataToSave);
         return dataToSave;
       }
-      console.error(`Error loading data for ${this.#filename}:`, error);
+      logger.error(`Error loading data for ${this.#filename}:`, error);
       throw error;
     }
   }
