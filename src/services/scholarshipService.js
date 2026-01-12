@@ -8,7 +8,7 @@ class ScholarshipService {
   #lock = Promise.resolve();
 
   constructor() {
-    this.#dataDir = path.join(__dirname, '..', process.env.DATA_DIR || 'data');
+    this.#dataDir = path.join(process.cwd(), process.env.DATA_DIR || 'data', 'db');
   }
 
   async #_runExclusive(task) {

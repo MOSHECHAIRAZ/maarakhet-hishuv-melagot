@@ -4,8 +4,8 @@
   "description": "Scholarship calculation system - Standalone version with independent server",
   "main": "index.html",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
   },
   "keywords": [
     "scholarship",

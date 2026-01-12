@@ -13,7 +13,7 @@ app.use(express.json());
 const asyncHandler = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(process.cwd(), 'public')));
 
 // CORS
 app.use((req, res, next) => {
@@ -62,7 +62,7 @@ const startServer = async () => {
     await scholarshipService.initialize();
     app.listen(PORT, () => {
         logger.info(`Scholarship Calculator Server running on port ${PORT}`);
-        logger.info(`Data files will be saved in: ${path.join(__dirname, process.env.DATA_DIR || 'data')}`);
+        logger.info(`Data files will be saved in: ${path.join(process.cwd(), process.env.DATA_DIR || 'data', 'db')}`);
         logger.info(`Available at: http://localhost:${PORT}`);
         logger.info(`API endpoints: POST /api/scholarships, GET /api/scholarships, GET /api/scholarships/:id, POST /api/scholarships-batch`);
         logger.info(`Press Ctrl+C to stop the server`);
