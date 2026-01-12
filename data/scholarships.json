@@ -1,0 +1,6040 @@
+{
+  "scholarships": [
+    {
+      "id": "sch_1762431590924",
+      "user_id": "default",
+      "month": "2025-07",
+      "amount": 679.922839506173,
+      "details": {
+        "calculationId": "2025_07",
+        "studentCount": 3,
+        "totalHours": 40.75222222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 27,
+        "processedData": [
+          {
+            "id": "311192025",
+            "name": "נמני נתן",
+            "totalHours": 17.646944444444443,
+            "baseStipend": 307.3225308641976,
+            "bonusStipend": 0,
+            "finalStipend": 307.3225308641976
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 14.728055555555555,
+            "baseStipend": 228.47222222222223,
+            "bonusStipend": 0,
+            "finalStipend": 228.47222222222223
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 8.377222222222223,
+            "baseStipend": 144.1280864197531,
+            "bonusStipend": 0,
+            "finalStipend": 144.1280864197531
+          }
+        ]
+      },
+      "timestamp": "2025-11-06T12:19:50.924Z"
+    },
+    {
+      "id": "sch_1762432003458",
+      "user_id": "default",
+      "month": "2025-08",
+      "amount": 2198.291132478633,
+      "details": {
+        "calculationId": "2025_08",
+        "studentCount": 6,
+        "totalHours": 116.05083333333334,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 44.781111111111116,
+            "baseStipend": 812.479967948718,
+            "bonusStipend": 84.80715811965813,
+            "finalStipend": 897.2871260683761
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 36.05861111111111,
+            "baseStipend": 647.5961538461539,
+            "bonusStipend": 0,
+            "finalStipend": 647.5961538461539
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 14.328611111111112,
+            "baseStipend": 253.3974358974359,
+            "bonusStipend": 43.96474358974359,
+            "finalStipend": 297.3621794871795
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 13.708333333333334,
+            "baseStipend": 230.52884615384616,
+            "bonusStipend": 0,
+            "finalStipend": 230.52884615384616
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 4.528333333333333,
+            "baseStipend": 72.93269230769232,
+            "bonusStipend": 0,
+            "finalStipend": 72.93269230769232
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 2.6458333333333335,
+            "baseStipend": 52.58413461538461,
+            "bonusStipend": 0,
+            "finalStipend": 52.58413461538461
+          }
+        ]
+      },
+      "timestamp": "2025-11-06T12:26:43.458Z"
+    },
+    {
+      "id": "sch_1762432024480",
+      "user_id": "default",
+      "month": "2025-08",
+      "amount": 2198.291132478633,
+      "details": {
+        "calculationId": "2025_08",
+        "studentCount": 6,
+        "totalHours": 116.05083333333334,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 44.781111111111116,
+            "baseStipend": 812.479967948718,
+            "bonusStipend": 84.80715811965813,
+            "finalStipend": 897.2871260683761
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 36.05861111111111,
+            "baseStipend": 647.5961538461539,
+            "bonusStipend": 0,
+            "finalStipend": 647.5961538461539
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 14.328611111111112,
+            "baseStipend": 253.3974358974359,
+            "bonusStipend": 43.96474358974359,
+            "finalStipend": 297.3621794871795
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 13.708333333333334,
+            "baseStipend": 230.52884615384616,
+            "bonusStipend": 0,
+            "finalStipend": 230.52884615384616
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 4.528333333333333,
+            "baseStipend": 72.93269230769232,
+            "bonusStipend": 0,
+            "finalStipend": 72.93269230769232
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 2.6458333333333335,
+            "baseStipend": 52.58413461538461,
+            "bonusStipend": 0,
+            "finalStipend": 52.58413461538461
+          }
+        ]
+      },
+      "timestamp": "2025-11-06T12:27:04.480Z"
+    },
+    {
+      "id": "sch_1762432036663",
+      "user_id": "default",
+      "month": "2025-08",
+      "amount": 2198.291132478633,
+      "details": {
+        "calculationId": "2025_08",
+        "studentCount": 6,
+        "totalHours": 116.05083333333334,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 44.781111111111116,
+            "baseStipend": 812.479967948718,
+            "bonusStipend": 84.80715811965813,
+            "finalStipend": 897.2871260683761
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 36.05861111111111,
+            "baseStipend": 647.5961538461539,
+            "bonusStipend": 0,
+            "finalStipend": 647.5961538461539
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 14.328611111111112,
+            "baseStipend": 253.3974358974359,
+            "bonusStipend": 43.96474358974359,
+            "finalStipend": 297.3621794871795
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 13.708333333333334,
+            "baseStipend": 230.52884615384616,
+            "bonusStipend": 0,
+            "finalStipend": 230.52884615384616
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 4.528333333333333,
+            "baseStipend": 72.93269230769232,
+            "bonusStipend": 0,
+            "finalStipend": 72.93269230769232
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 2.6458333333333335,
+            "baseStipend": 52.58413461538461,
+            "bonusStipend": 0,
+            "finalStipend": 52.58413461538461
+          }
+        ]
+      },
+      "timestamp": "2025-11-06T12:27:16.663Z"
+    },
+    {
+      "id": "sch_1762432084058",
+      "user_id": "default",
+      "month": "2025-08",
+      "amount": 2211.7767094017095,
+      "details": {
+        "calculationId": "2025_08",
+        "studentCount": 6,
+        "totalHours": 116.05083333333334,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 44.781111111111116,
+            "baseStipend": 815.1482371794872,
+            "bonusStipend": 84.80715811965813,
+            "finalStipend": 899.9553952991453
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 36.05861111111111,
+            "baseStipend": 651.2019230769231,
+            "bonusStipend": 0,
+            "finalStipend": 651.2019230769231
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 14.328611111111112,
+            "baseStipend": 260.60897435897436,
+            "bonusStipend": 43.96474358974359,
+            "finalStipend": 304.57371794871796
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 13.708333333333334,
+            "baseStipend": 230.52884615384616,
+            "bonusStipend": 0,
+            "finalStipend": 230.52884615384616
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 4.528333333333333,
+            "baseStipend": 72.93269230769232,
+            "bonusStipend": 0,
+            "finalStipend": 72.93269230769232
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 2.6458333333333335,
+            "baseStipend": 52.58413461538461,
+            "bonusStipend": 0,
+            "finalStipend": 52.58413461538461
+          }
+        ]
+      },
+      "timestamp": "2025-11-06T12:28:04.058Z"
+    },
+    {
+      "id": "sch_1762432102058",
+      "user_id": "default",
+      "month": "2025-08",
+      "amount": 2182.425747863248,
+      "details": {
+        "calculationId": "2025_08",
+        "studentCount": 6,
+        "totalHours": 116.05083333333334,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 44.781111111111116,
+            "baseStipend": 805.2684294871794,
+            "bonusStipend": 83.36485042735043,
+            "finalStipend": 888.6332799145299
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 36.05861111111111,
+            "baseStipend": 640.3846153846155,
+            "bonusStipend": 0,
+            "finalStipend": 640.3846153846155
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 14.328611111111112,
+            "baseStipend": 253.3974358974359,
+            "bonusStipend": 43.96474358974359,
+            "finalStipend": 297.3621794871795
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 13.708333333333334,
+            "baseStipend": 230.52884615384616,
+            "bonusStipend": 0,
+            "finalStipend": 230.52884615384616
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 4.528333333333333,
+            "baseStipend": 72.93269230769232,
+            "bonusStipend": 0,
+            "finalStipend": 72.93269230769232
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 2.6458333333333335,
+            "baseStipend": 52.58413461538461,
+            "bonusStipend": 0,
+            "finalStipend": 52.58413461538461
+          }
+        ]
+      },
+      "timestamp": "2025-11-06T12:28:22.058Z"
+    },
+    {
+      "id": "sch_1762432125807",
+      "user_id": "default",
+      "month": "2025-08",
+      "amount": 2182.425747863248,
+      "details": {
+        "calculationId": "2025_08",
+        "studentCount": 6,
+        "totalHours": 116.05083333333334,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 44.781111111111116,
+            "baseStipend": 805.2684294871794,
+            "bonusStipend": 83.36485042735043,
+            "finalStipend": 888.6332799145299
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 36.05861111111111,
+            "baseStipend": 640.3846153846155,
+            "bonusStipend": 0,
+            "finalStipend": 640.3846153846155
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 14.328611111111112,
+            "baseStipend": 253.3974358974359,
+            "bonusStipend": 43.96474358974359,
+            "finalStipend": 297.3621794871795
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 13.708333333333334,
+            "baseStipend": 230.52884615384616,
+            "bonusStipend": 0,
+            "finalStipend": 230.52884615384616
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 4.528333333333333,
+            "baseStipend": 72.93269230769232,
+            "bonusStipend": 0,
+            "finalStipend": 72.93269230769232
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 2.6458333333333335,
+            "baseStipend": 52.58413461538461,
+            "bonusStipend": 0,
+            "finalStipend": 52.58413461538461
+          }
+        ]
+      },
+      "timestamp": "2025-11-06T12:28:45.807Z"
+    },
+    {
+      "id": "sch_1762833700607",
+      "user_id": "default",
+      "month": "2025-07",
+      "amount": 679.922839506173,
+      "details": {
+        "calculationId": "2025_07",
+        "studentCount": 3,
+        "totalHours": 40.75222222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 27,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 17.646944444444443,
+            "baseStipend": 307.3225308641976,
+            "bonusStipend": 0,
+            "finalStipend": 307.3225308641976
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 14.728055555555555,
+            "baseStipend": 228.47222222222223,
+            "bonusStipend": 0,
+            "finalStipend": 228.47222222222223
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 8.377222222222223,
+            "baseStipend": 144.1280864197531,
+            "bonusStipend": 0,
+            "finalStipend": 144.1280864197531
+          }
+        ]
+      },
+      "timestamp": "2025-11-11T04:01:40.607Z"
+    },
+    {
+      "id": "sch_1762834561924",
+      "user_id": "default",
+      "month": "2025-08",
+      "amount": 2198.291132478633,
+      "details": {
+        "calculationId": "2025_08",
+        "studentCount": 6,
+        "totalHours": 116.05083333333334,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          },
+          {
+            "startDate": "2025-08-07T00:00:00.000Z",
+            "sederStart": "01:45"
+          },
+          {
+            "startDate": "2025-08-31T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 44.781111111111116,
+            "baseStipend": 812.479967948718,
+            "bonusStipend": 84.80715811965813,
+            "finalStipend": 897.2871260683761
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 36.05861111111111,
+            "baseStipend": 647.5961538461539,
+            "bonusStipend": 0,
+            "finalStipend": 647.5961538461539
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 14.328611111111112,
+            "baseStipend": 253.3974358974359,
+            "bonusStipend": 43.96474358974359,
+            "finalStipend": 297.3621794871795
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 13.708333333333334,
+            "baseStipend": 230.52884615384616,
+            "bonusStipend": 0,
+            "finalStipend": 230.52884615384616
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 4.528333333333333,
+            "baseStipend": 72.93269230769232,
+            "bonusStipend": 0,
+            "finalStipend": 72.93269230769232
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 2.6458333333333335,
+            "baseStipend": 52.58413461538461,
+            "bonusStipend": 0,
+            "finalStipend": 52.58413461538461
+          }
+        ]
+      },
+      "timestamp": "2025-11-11T04:16:01.924Z"
+    },
+    {
+      "id": "sch_1762834695461",
+      "user_id": "default",
+      "month": "2025-09",
+      "amount": 1945.2792467948718,
+      "details": {
+        "calculationId": "2025_09",
+        "studentCount": 8,
+        "totalHours": 97.63472222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 50.36916666666668,
+            "baseStipend": 939.5713141025641,
+            "bonusStipend": 152.99959935897436,
+            "finalStipend": 1092.5709134615386
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 14.434166666666666,
+            "baseStipend": 259.13461538461536,
+            "bonusStipend": 0,
+            "finalStipend": 259.13461538461536
+          },
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 9.72888888888889,
+            "baseStipend": 193.05689102564105,
+            "bonusStipend": 0,
+            "finalStipend": 193.05689102564105
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 8.988888888888887,
+            "baseStipend": 172.33573717948718,
+            "bonusStipend": 0,
+            "finalStipend": 172.33573717948718
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 8.457222222222223,
+            "baseStipend": 141.0096153846154,
+            "bonusStipend": 0,
+            "finalStipend": 141.0096153846154
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 2.5925000000000002,
+            "baseStipend": 37.39182692307693,
+            "bonusStipend": 0,
+            "finalStipend": 37.39182692307693
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 1.8305555555555555,
+            "baseStipend": 31.991185897435898,
+            "bonusStipend": 0,
+            "finalStipend": 31.991185897435898
+          },
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 1.2333333333333334,
+            "baseStipend": 17.78846153846154,
+            "bonusStipend": 0,
+            "finalStipend": 17.78846153846154
+          }
+        ]
+      },
+      "timestamp": "2025-11-11T04:18:15.461Z"
+    },
+    {
+      "id": "sch_1762835708365",
+      "user_id": "default",
+      "month": "2025-10",
+      "amount": 1349.8341049382716,
+      "details": {
+        "calculationId": "2025_10",
+        "studentCount": 7,
+        "totalHours": 79.33305555555556,
+        "monthlyStipend": 1500,
+        "workableDays": 27,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "02:00"
+          },
+          {
+            "startDate": "2025-10-16T00:00:00.000Z",
+            "sederStart": "02:30"
+          },
+          {
+            "startDate": "2025-10-26T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 24.978333333333335,
+            "baseStipend": 419.5293209876544,
+            "bonusStipend": 0,
+            "finalStipend": 419.5293209876544
+          },
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 21.872222222222224,
+            "baseStipend": 361.2885802469136,
+            "bonusStipend": 0,
+            "finalStipend": 361.2885802469136
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 10.810555555555556,
+            "baseStipend": 203.07098765432096,
+            "bonusStipend": 0,
+            "finalStipend": 203.07098765432096
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 7.546388888888889,
+            "baseStipend": 145.5246913580247,
+            "bonusStipend": 0,
+            "finalStipend": 145.5246913580247
+          },
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 7.329444444444444,
+            "baseStipend": 115.90663580246914,
+            "bonusStipend": 0,
+            "finalStipend": 115.90663580246914
+          },
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 2.95,
+            "baseStipend": 54.16666666666667,
+            "bonusStipend": 0,
+            "finalStipend": 54.16666666666667
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 3.846111111111111,
+            "baseStipend": 50.34722222222223,
+            "bonusStipend": 0,
+            "finalStipend": 50.34722222222223
+          }
+        ]
+      },
+      "timestamp": "2025-11-11T04:35:08.365Z"
+    },
+    {
+      "id": "sch_1762836623381",
+      "user_id": "default",
+      "month": "2025-07",
+      "amount": 679.922839506173,
+      "details": {
+        "calculationId": "2025_07",
+        "studentCount": 3,
+        "totalHours": 40.75222222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 27,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 17.646944444444443,
+            "baseStipend": 307.3225308641976,
+            "bonusStipend": 0,
+            "finalStipend": 307.3225308641976
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 14.728055555555555,
+            "baseStipend": 228.47222222222223,
+            "bonusStipend": 0,
+            "finalStipend": 228.47222222222223
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 8.377222222222223,
+            "baseStipend": 144.1280864197531,
+            "bonusStipend": 0,
+            "finalStipend": 144.1280864197531
+          }
+        ],
+        "rawStudentData": {
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {}
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {}
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {}
+          }
+        }
+      },
+      "timestamp": "2025-11-11T04:50:23.381Z"
+    },
+    {
+      "id": "sch_1762837143209",
+      "user_id": "default",
+      "month": "2025-08",
+      "amount": 2231.2478632478633,
+      "details": {
+        "calculationId": "2025_08",
+        "studentCount": 6,
+        "totalHours": 116.05083333333334,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          },
+          {
+            "startDate": "2025-08-07T00:00:00.000Z",
+            "sederStart": "01:45"
+          },
+          {
+            "startDate": "2025-08-31T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 44.781111111111116,
+            "baseStipend": 822.3597756410255,
+            "bonusStipend": 86.24946581196582,
+            "finalStipend": 908.6092414529913
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 36.05861111111111,
+            "baseStipend": 658.4134615384615,
+            "bonusStipend": 0,
+            "finalStipend": 658.4134615384615
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 14.328611111111112,
+            "baseStipend": 260.60897435897436,
+            "bonusStipend": 43.96474358974359,
+            "finalStipend": 304.57371794871796
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 13.708333333333334,
+            "baseStipend": 234.1346153846154,
+            "bonusStipend": 0,
+            "finalStipend": 234.1346153846154
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 4.528333333333333,
+            "baseStipend": 72.93269230769232,
+            "bonusStipend": 0,
+            "finalStipend": 72.93269230769232
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 2.6458333333333335,
+            "baseStipend": 52.58413461538461,
+            "bonusStipend": 0,
+            "finalStipend": 52.58413461538461
+          }
+        ],
+        "rawStudentData": {
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {}
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {}
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {}
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {}
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {}
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {}
+          }
+        }
+      },
+      "timestamp": "2025-11-11T04:59:03.209Z"
+    },
+    {
+      "id": "sch_1762837217448",
+      "user_id": "default",
+      "month": "2025-09",
+      "amount": 1945.2792467948718,
+      "details": {
+        "calculationId": "2025_09",
+        "studentCount": 8,
+        "totalHours": 97.63472222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 50.36916666666668,
+            "baseStipend": 939.5713141025641,
+            "bonusStipend": 152.99959935897436,
+            "finalStipend": 1092.5709134615386
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 14.434166666666666,
+            "baseStipend": 259.13461538461536,
+            "bonusStipend": 0,
+            "finalStipend": 259.13461538461536
+          },
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 9.72888888888889,
+            "baseStipend": 193.05689102564105,
+            "bonusStipend": 0,
+            "finalStipend": 193.05689102564105
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 8.988888888888887,
+            "baseStipend": 172.33573717948718,
+            "bonusStipend": 0,
+            "finalStipend": 172.33573717948718
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 8.457222222222223,
+            "baseStipend": 141.0096153846154,
+            "bonusStipend": 0,
+            "finalStipend": 141.0096153846154
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 2.5925000000000002,
+            "baseStipend": 37.39182692307693,
+            "bonusStipend": 0,
+            "finalStipend": 37.39182692307693
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 1.8305555555555555,
+            "baseStipend": 31.991185897435898,
+            "bonusStipend": 0,
+            "finalStipend": 31.991185897435898
+          },
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 1.2333333333333334,
+            "baseStipend": 17.78846153846154,
+            "bonusStipend": 0,
+            "finalStipend": 17.78846153846154
+          }
+        ],
+        "rawStudentData": {
+          "203987235": {
+            "name": "אורי דוד",
+            "dailySessions": {}
+          },
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {}
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {}
+          },
+          "314752775": {
+            "name": "מאיר חנון",
+            "dailySessions": {}
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {}
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {}
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {}
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {}
+          }
+        }
+      },
+      "timestamp": "2025-11-11T05:00:17.448Z"
+    },
+    {
+      "id": "sch_1762837627511",
+      "user_id": "default",
+      "month": "2025-07",
+      "amount": 679.922839506173,
+      "details": {
+        "calculationId": "2025_07",
+        "studentCount": 3,
+        "totalHours": 40.75222222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 27,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 17.646944444444443,
+            "baseStipend": 307.3225308641976,
+            "bonusStipend": 0,
+            "finalStipend": 307.3225308641976
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 14.728055555555555,
+            "baseStipend": 228.47222222222223,
+            "bonusStipend": 0,
+            "finalStipend": 228.47222222222223
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 8.377222222222223,
+            "baseStipend": 144.1280864197531,
+            "bonusStipend": 0,
+            "finalStipend": 144.1280864197531
+          }
+        ],
+        "rawStudentData": {
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-07-20": [
+                {
+                  "start": "2025-07-19T22:40:00.000Z",
+                  "end": "2025-07-20T01:20:00.000Z"
+                }
+              ],
+              "2025-07-21": [
+                {
+                  "start": "2025-07-20T22:45:00.000Z",
+                  "end": "2025-07-21T01:20:00.000Z"
+                }
+              ],
+              "2025-07-23": [
+                {
+                  "start": "2025-07-22T23:15:00.000Z",
+                  "end": "2025-07-23T01:20:00.000Z"
+                }
+              ],
+              "2025-07-25": [
+                {
+                  "start": "2025-07-24T22:30:00.000Z",
+                  "end": "2025-07-25T01:30:00.000Z"
+                }
+              ],
+              "2025-07-27": [
+                {
+                  "start": "2025-07-26T22:50:00.000Z",
+                  "end": "2025-07-27T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-27T22:31:11.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:50:00.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-07-23": [
+                {
+                  "start": "2025-07-22T22:30:00.000Z",
+                  "end": "2025-07-23T01:30:00.000Z"
+                }
+              ],
+              "2025-07-24": [
+                {
+                  "start": "2025-07-23T22:30:00.000Z",
+                  "end": "2025-07-24T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-28T00:48:54.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:48:28.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-07-20": [
+                {
+                  "start": "2025-07-19T23:30:00.000Z",
+                  "end": "2025-07-20T01:30:00.000Z"
+                }
+              ],
+              "2025-07-21": [
+                {
+                  "start": "2025-07-20T23:30:00.000Z",
+                  "end": "2025-07-21T01:30:00.000Z"
+                }
+              ],
+              "2025-07-25": [
+                {
+                  "start": "2025-07-24T22:30:00.000Z",
+                  "end": "2025-07-25T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-27T23:35:27.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:37:50.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ],
+              "2025-07-30": [
+                {
+                  "start": "2025-07-29T22:46:41.000Z",
+                  "end": "2025-07-30T01:30:00.000Z"
+                }
+              ],
+              "2025-07-31": [
+                {
+                  "start": "2025-07-31T00:16:21.000Z",
+                  "end": "2025-07-31T01:30:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-11-11T05:07:07.511Z"
+    },
+    {
+      "id": "sch_1762837649790",
+      "user_id": "default",
+      "month": "2025-07",
+      "amount": 679.922839506173,
+      "details": {
+        "calculationId": "2025_07",
+        "studentCount": 3,
+        "totalHours": 40.75222222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 27,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 17.646944444444443,
+            "baseStipend": 307.3225308641976,
+            "bonusStipend": 0,
+            "finalStipend": 307.3225308641976
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 14.728055555555555,
+            "baseStipend": 228.47222222222223,
+            "bonusStipend": 0,
+            "finalStipend": 228.47222222222223
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 8.377222222222223,
+            "baseStipend": 144.1280864197531,
+            "bonusStipend": 0,
+            "finalStipend": 144.1280864197531
+          }
+        ],
+        "rawStudentData": {
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-07-20": [
+                {
+                  "start": "2025-07-19T22:40:00.000Z",
+                  "end": "2025-07-20T01:20:00.000Z"
+                }
+              ],
+              "2025-07-21": [
+                {
+                  "start": "2025-07-20T22:45:00.000Z",
+                  "end": "2025-07-21T01:20:00.000Z"
+                }
+              ],
+              "2025-07-23": [
+                {
+                  "start": "2025-07-22T23:15:00.000Z",
+                  "end": "2025-07-23T01:20:00.000Z"
+                }
+              ],
+              "2025-07-25": [
+                {
+                  "start": "2025-07-24T22:30:00.000Z",
+                  "end": "2025-07-25T01:30:00.000Z"
+                }
+              ],
+              "2025-07-27": [
+                {
+                  "start": "2025-07-26T22:50:00.000Z",
+                  "end": "2025-07-27T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-27T22:31:11.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:50:00.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-07-23": [
+                {
+                  "start": "2025-07-22T22:30:00.000Z",
+                  "end": "2025-07-23T01:30:00.000Z"
+                }
+              ],
+              "2025-07-24": [
+                {
+                  "start": "2025-07-23T22:30:00.000Z",
+                  "end": "2025-07-24T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-28T00:48:54.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:48:28.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-07-20": [
+                {
+                  "start": "2025-07-19T23:30:00.000Z",
+                  "end": "2025-07-20T01:30:00.000Z"
+                }
+              ],
+              "2025-07-21": [
+                {
+                  "start": "2025-07-20T23:30:00.000Z",
+                  "end": "2025-07-21T01:30:00.000Z"
+                }
+              ],
+              "2025-07-25": [
+                {
+                  "start": "2025-07-24T22:30:00.000Z",
+                  "end": "2025-07-25T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-27T23:35:27.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:37:50.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ],
+              "2025-07-30": [
+                {
+                  "start": "2025-07-29T22:46:41.000Z",
+                  "end": "2025-07-30T01:30:00.000Z"
+                }
+              ],
+              "2025-07-31": [
+                {
+                  "start": "2025-07-31T00:16:21.000Z",
+                  "end": "2025-07-31T01:30:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-11-11T05:07:29.790Z"
+    },
+    {
+      "id": "sch_1762837669855",
+      "user_id": "default",
+      "month": "2025-08",
+      "amount": 2231.2478632478633,
+      "details": {
+        "calculationId": "2025_08",
+        "studentCount": 6,
+        "totalHours": 116.05083333333334,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          },
+          {
+            "startDate": "2025-08-07T00:00:00.000Z",
+            "sederStart": "01:45"
+          },
+          {
+            "startDate": "2025-08-31T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 44.781111111111116,
+            "baseStipend": 822.3597756410255,
+            "bonusStipend": 86.24946581196582,
+            "finalStipend": 908.6092414529913
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 36.05861111111111,
+            "baseStipend": 658.4134615384615,
+            "bonusStipend": 0,
+            "finalStipend": 658.4134615384615
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 14.328611111111112,
+            "baseStipend": 260.60897435897436,
+            "bonusStipend": 43.96474358974359,
+            "finalStipend": 304.57371794871796
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 13.708333333333334,
+            "baseStipend": 234.1346153846154,
+            "bonusStipend": 0,
+            "finalStipend": 234.1346153846154
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 4.528333333333333,
+            "baseStipend": 72.93269230769232,
+            "bonusStipend": 0,
+            "finalStipend": 72.93269230769232
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 2.6458333333333335,
+            "baseStipend": 52.58413461538461,
+            "bonusStipend": 0,
+            "finalStipend": 52.58413461538461
+          }
+        ],
+        "rawStudentData": {
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-08-25": [
+                {
+                  "start": "2025-08-24T22:55:00.000Z",
+                  "end": "2025-08-25T00:40:00.000Z"
+                }
+              ],
+              "2025-08-26": [
+                {
+                  "start": "2025-08-25T23:10:00.000Z",
+                  "end": "2025-08-26T01:45:00.000Z"
+                }
+              ],
+              "2025-08-27": [
+                {
+                  "start": "2025-08-26T22:51:03.000Z",
+                  "end": "2025-08-27T01:45:00.000Z"
+                }
+              ],
+              "2025-08-28": [
+                {
+                  "start": "2025-08-27T22:57:05.000Z",
+                  "end": "2025-08-28T01:25:18.000Z"
+                }
+              ],
+              "2025-08-29": [
+                {
+                  "start": "2025-08-28T23:32:17.000Z",
+                  "end": "2025-08-29T01:45:00.000Z"
+                }
+              ],
+              "2025-08-31": [
+                {
+                  "start": "2025-08-30T23:35:10.000Z",
+                  "end": "2025-08-31T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-08-01": [
+                {
+                  "start": "2025-08-01T00:30:00.000Z",
+                  "end": "2025-08-01T01:30:00.000Z"
+                }
+              ],
+              "2025-08-03": [
+                {
+                  "start": "2025-08-02T23:23:39.000Z",
+                  "end": "2025-08-03T01:30:00.000Z"
+                }
+              ],
+              "2025-08-04": [
+                {
+                  "start": "2025-08-03T22:50:00.000Z",
+                  "end": "2025-08-04T01:30:00.000Z"
+                }
+              ],
+              "2025-08-07": [
+                {
+                  "start": "2025-08-06T22:53:35.000Z",
+                  "end": "2025-08-07T01:45:00.000Z"
+                }
+              ],
+              "2025-08-08": [
+                {
+                  "start": "2025-08-07T23:12:39.000Z",
+                  "end": "2025-08-08T01:45:00.000Z"
+                }
+              ],
+              "2025-08-10": [
+                {
+                  "start": "2025-08-09T22:51:00.000Z",
+                  "end": "2025-08-09T23:50:00.000Z"
+                }
+              ],
+              "2025-08-11": [
+                {
+                  "start": "2025-08-10T22:50:00.000Z",
+                  "end": "2025-08-11T01:45:00.000Z"
+                }
+              ],
+              "2025-08-14": [
+                {
+                  "start": "2025-08-13T22:48:25.000Z",
+                  "end": "2025-08-14T01:45:00.000Z"
+                }
+              ],
+              "2025-08-15": [
+                {
+                  "start": "2025-08-14T23:14:53.000Z",
+                  "end": "2025-08-15T01:45:00.000Z"
+                }
+              ],
+              "2025-08-17": [
+                {
+                  "start": "2025-08-16T22:50:00.000Z",
+                  "end": "2025-08-17T00:45:00.000Z"
+                }
+              ],
+              "2025-08-18": [
+                {
+                  "start": "2025-08-17T23:05:31.000Z",
+                  "end": "2025-08-18T01:45:00.000Z"
+                }
+              ],
+              "2025-08-19": [
+                {
+                  "start": "2025-08-18T22:51:46.000Z",
+                  "end": "2025-08-19T01:45:00.000Z"
+                }
+              ],
+              "2025-08-25": [
+                {
+                  "start": "2025-08-24T23:42:50.000Z",
+                  "end": "2025-08-25T01:45:00.000Z"
+                }
+              ],
+              "2025-08-26": [
+                {
+                  "start": "2025-08-25T22:59:13.000Z",
+                  "end": "2025-08-26T01:45:00.000Z"
+                }
+              ],
+              "2025-08-29": [
+                {
+                  "start": "2025-08-29T00:21:58.000Z",
+                  "end": "2025-08-29T01:45:00.000Z"
+                }
+              ],
+              "2025-08-31": [
+                {
+                  "start": "2025-08-30T23:06:00.000Z",
+                  "end": "2025-08-31T01:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {
+              "2025-08-04": [
+                {
+                  "start": "2025-08-04T00:15:00.000Z",
+                  "end": "2025-08-04T01:30:00.000Z"
+                }
+              ],
+              "2025-08-05": [
+                {
+                  "start": "2025-08-04T22:40:00.000Z",
+                  "end": "2025-08-05T01:30:00.000Z"
+                }
+              ],
+              "2025-08-06": [
+                {
+                  "start": "2025-08-05T22:40:00.000Z",
+                  "end": "2025-08-06T01:30:00.000Z"
+                }
+              ],
+              "2025-08-07": [
+                {
+                  "start": "2025-08-06T22:45:00.000Z",
+                  "end": "2025-08-07T01:45:00.000Z"
+                }
+              ],
+              "2025-08-08": [
+                {
+                  "start": "2025-08-07T22:45:07.000Z",
+                  "end": "2025-08-08T01:45:00.000Z"
+                }
+              ],
+              "2025-08-10": [
+                {
+                  "start": "2025-08-09T22:45:22.000Z",
+                  "end": "2025-08-10T01:45:00.000Z"
+                }
+              ],
+              "2025-08-11": [
+                {
+                  "start": "2025-08-11T00:23:57.000Z",
+                  "end": "2025-08-11T01:45:00.000Z"
+                }
+              ],
+              "2025-08-12": [
+                {
+                  "start": "2025-08-11T22:51:20.000Z",
+                  "end": "2025-08-12T01:45:00.000Z"
+                }
+              ],
+              "2025-08-17": [
+                {
+                  "start": "2025-08-16T22:59:10.000Z",
+                  "end": "2025-08-17T01:45:00.000Z"
+                }
+              ],
+              "2025-08-18": [
+                {
+                  "start": "2025-08-18T00:37:51.000Z",
+                  "end": "2025-08-18T01:45:00.000Z"
+                }
+              ],
+              "2025-08-19": [
+                {
+                  "start": "2025-08-19T00:44:23.000Z",
+                  "end": "2025-08-19T01:45:00.000Z"
+                }
+              ],
+              "2025-08-20": [
+                {
+                  "start": "2025-08-19T23:34:57.000Z",
+                  "end": "2025-08-20T01:45:00.000Z"
+                }
+              ],
+              "2025-08-21": [
+                {
+                  "start": "2025-08-20T22:45:06.000Z",
+                  "end": "2025-08-21T01:45:00.000Z"
+                }
+              ],
+              "2025-08-22": [
+                {
+                  "start": "2025-08-21T22:45:08.000Z",
+                  "end": "2025-08-22T01:45:00.000Z"
+                }
+              ],
+              "2025-08-24": [
+                {
+                  "start": "2025-08-23T22:48:27.000Z",
+                  "end": "2025-08-24T01:45:00.000Z"
+                }
+              ],
+              "2025-08-25": [
+                {
+                  "start": "2025-08-24T22:54:12.000Z",
+                  "end": "2025-08-25T01:45:00.000Z"
+                }
+              ],
+              "2025-08-28": [
+                {
+                  "start": "2025-08-27T22:45:05.000Z",
+                  "end": "2025-08-28T01:45:00.000Z"
+                }
+              ],
+              "2025-08-31": [
+                {
+                  "start": "2025-08-30T22:58:03.000Z",
+                  "end": "2025-08-31T01:45:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-08-04": [
+                {
+                  "start": "2025-08-03T23:12:52.000Z",
+                  "end": "2025-08-04T01:30:00.000Z"
+                }
+              ],
+              "2025-08-14": [
+                {
+                  "start": "2025-08-13T23:30:26.000Z",
+                  "end": "2025-08-14T01:45:00.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-08-27": [
+                {
+                  "start": "2025-08-26T22:45:00.000Z",
+                  "end": "2025-08-27T01:23:45.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-08-01": [
+                {
+                  "start": "2025-08-01T00:17:00.000Z",
+                  "end": "2025-08-01T01:30:00.000Z"
+                }
+              ],
+              "2025-08-07": [
+                {
+                  "start": "2025-08-06T23:00:00.000Z",
+                  "end": "2025-08-07T01:30:00.000Z"
+                }
+              ],
+              "2025-08-14": [
+                {
+                  "start": "2025-08-13T22:57:00.000Z",
+                  "end": "2025-08-14T00:50:00.000Z"
+                }
+              ],
+              "2025-08-17": [
+                {
+                  "start": "2025-08-16T23:25:00.000Z",
+                  "end": "2025-08-17T01:45:00.000Z"
+                }
+              ],
+              "2025-08-20": [
+                {
+                  "start": "2025-08-20T00:02:00.000Z",
+                  "end": "2025-08-20T00:45:00.000Z"
+                }
+              ],
+              "2025-08-21": [
+                {
+                  "start": "2025-08-20T23:06:30.000Z",
+                  "end": "2025-08-21T01:45:00.000Z"
+                }
+              ],
+              "2025-08-24": [
+                {
+                  "start": "2025-08-23T23:50:00.000Z",
+                  "end": "2025-08-24T01:15:00.000Z"
+                }
+              ],
+              "2025-08-31": [
+                {
+                  "start": "2025-08-31T00:00:00.000Z",
+                  "end": "2025-08-31T01:00:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-11-11T05:07:49.855Z"
+    },
+    {
+      "id": "sch_1762837698191",
+      "user_id": "default",
+      "month": "2025-09",
+      "amount": 1945.2792467948718,
+      "details": {
+        "calculationId": "2025_09",
+        "studentCount": 8,
+        "totalHours": 97.63472222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 50.36916666666668,
+            "baseStipend": 939.5713141025641,
+            "bonusStipend": 152.99959935897436,
+            "finalStipend": 1092.5709134615386
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 14.434166666666666,
+            "baseStipend": 259.13461538461536,
+            "bonusStipend": 0,
+            "finalStipend": 259.13461538461536
+          },
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 9.72888888888889,
+            "baseStipend": 193.05689102564105,
+            "bonusStipend": 0,
+            "finalStipend": 193.05689102564105
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 8.988888888888887,
+            "baseStipend": 172.33573717948718,
+            "bonusStipend": 0,
+            "finalStipend": 172.33573717948718
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 8.457222222222223,
+            "baseStipend": 141.0096153846154,
+            "bonusStipend": 0,
+            "finalStipend": 141.0096153846154
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 2.5925000000000002,
+            "baseStipend": 37.39182692307693,
+            "bonusStipend": 0,
+            "finalStipend": 37.39182692307693
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 1.8305555555555555,
+            "baseStipend": 31.991185897435898,
+            "bonusStipend": 0,
+            "finalStipend": 31.991185897435898
+          },
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 1.2333333333333334,
+            "baseStipend": 17.78846153846154,
+            "bonusStipend": 0,
+            "finalStipend": 17.78846153846154
+          }
+        ],
+        "rawStudentData": {
+          "203987235": {
+            "name": "אורי דוד",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:00:00.000Z",
+                  "end": "2025-09-01T01:30:00.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-10T23:15:25.000Z",
+                  "end": "2025-09-11T01:30:34.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-14T23:05:12.000Z",
+                  "end": "2025-09-15T01:31:25.000Z"
+                }
+              ],
+              "2025-09-29": [
+                {
+                  "start": "2025-09-28T23:00:00.000Z",
+                  "end": "2025-09-29T01:32:22.000Z"
+                }
+              ]
+            }
+          },
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:00:00.000Z",
+                  "end": "2025-09-01T01:24:59.000Z"
+                }
+              ],
+              "2025-09-09": [
+                {
+                  "start": "2025-09-08T23:00:00.000Z",
+                  "end": "2025-09-09T01:35:13.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-09T23:02:25.000Z",
+                  "end": "2025-09-10T01:35:37.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-15T00:10:09.000Z",
+                  "end": "2025-09-15T01:36:05.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-09-02": [
+                {
+                  "start": "2025-09-02T00:34:49.000Z",
+                  "end": "2025-09-02T02:00:00.000Z"
+                }
+              ],
+              "2025-09-07": [
+                {
+                  "start": "2025-09-06T23:00:23.000Z",
+                  "end": "2025-09-07T01:02:06.000Z"
+                }
+              ],
+              "2025-09-09": [
+                {
+                  "start": "2025-09-08T23:19:31.000Z",
+                  "end": "2025-09-09T02:00:00.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-09T23:11:09.000Z",
+                  "end": "2025-09-10T01:51:23.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-11T00:27:07.000Z",
+                  "end": "2025-09-11T02:00:00.000Z"
+                }
+              ],
+              "2025-09-14": [
+                {
+                  "start": "2025-09-13T23:00:00.000Z",
+                  "end": "2025-09-13T23:45:00.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-15T00:57:27.000Z",
+                  "end": "2025-09-15T02:00:00.000Z"
+                }
+              ],
+              "2025-09-16": [
+                {
+                  "start": "2025-09-15T23:42:00.000Z",
+                  "end": "2025-09-16T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "314752775": {
+            "name": "מאיר חנון",
+            "dailySessions": {
+              "2025-09-30": [
+                {
+                  "start": "2025-09-30T00:46:00.000Z",
+                  "end": "2025-09-30T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:01:24.000Z",
+                  "end": "2025-09-01T02:00:00.000Z"
+                }
+              ],
+              "2025-09-02": [
+                {
+                  "start": "2025-09-01T23:00:18.000Z",
+                  "end": "2025-09-02T02:00:00.000Z"
+                }
+              ],
+              "2025-09-03": [
+                {
+                  "start": "2025-09-02T23:00:00.000Z",
+                  "end": "2025-09-03T02:00:00.000Z"
+                }
+              ],
+              "2025-09-04": [
+                {
+                  "start": "2025-09-03T23:09:06.000Z",
+                  "end": "2025-09-04T02:00:00.000Z"
+                }
+              ],
+              "2025-09-05": [
+                {
+                  "start": "2025-09-04T23:02:54.000Z",
+                  "end": "2025-09-05T02:00:00.000Z"
+                }
+              ],
+              "2025-09-07": [
+                {
+                  "start": "2025-09-06T23:03:36.000Z",
+                  "end": "2025-09-07T02:00:00.000Z"
+                }
+              ],
+              "2025-09-08": [
+                {
+                  "start": "2025-09-07T23:00:00.000Z",
+                  "end": "2025-09-08T02:00:00.000Z"
+                }
+              ],
+              "2025-09-09": [
+                {
+                  "start": "2025-09-09T00:47:40.000Z",
+                  "end": "2025-09-09T02:00:00.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-10T01:03:59.000Z",
+                  "end": "2025-09-10T02:00:00.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-10T23:09:49.000Z",
+                  "end": "2025-09-11T02:00:00.000Z"
+                }
+              ],
+              "2025-09-12": [
+                {
+                  "start": "2025-09-11T23:00:00.000Z",
+                  "end": "2025-09-12T02:00:00.000Z"
+                }
+              ],
+              "2025-09-14": [
+                {
+                  "start": "2025-09-13T23:00:00.000Z",
+                  "end": "2025-09-14T02:00:00.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-14T23:00:00.000Z",
+                  "end": "2025-09-15T02:00:00.000Z"
+                }
+              ],
+              "2025-09-16": [
+                {
+                  "start": "2025-09-15T23:00:04.000Z",
+                  "end": "2025-09-16T02:00:00.000Z"
+                }
+              ],
+              "2025-09-17": [
+                {
+                  "start": "2025-09-16T23:00:00.000Z",
+                  "end": "2025-09-17T02:00:00.000Z"
+                }
+              ],
+              "2025-09-18": [
+                {
+                  "start": "2025-09-17T23:39:24.000Z",
+                  "end": "2025-09-18T02:00:00.000Z"
+                }
+              ],
+              "2025-09-19": [
+                {
+                  "start": "2025-09-18T23:05:25.000Z",
+                  "end": "2025-09-19T02:00:00.000Z"
+                }
+              ],
+              "2025-09-21": [
+                {
+                  "start": "2025-09-21T00:55:02.000Z",
+                  "end": "2025-09-21T02:00:00.000Z"
+                }
+              ],
+              "2025-09-22": [
+                {
+                  "start": "2025-09-22T00:52:27.000Z",
+                  "end": "2025-09-22T02:00:00.000Z"
+                }
+              ],
+              "2025-09-25": [
+                {
+                  "start": "2025-09-24T23:01:32.000Z",
+                  "end": "2025-09-25T01:14:49.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-09-02": [
+                {
+                  "start": "2025-09-01T23:36:45.000Z",
+                  "end": "2025-09-02T01:26:35.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:00:00.000Z",
+                  "end": "2025-09-01T01:30:00.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-10T00:04:50.000Z",
+                  "end": "2025-09-10T01:53:33.000Z"
+                }
+              ],
+              "2025-09-16": [
+                {
+                  "start": "2025-09-16T00:29:30.000Z",
+                  "end": "2025-09-16T01:33:23.000Z"
+                }
+              ],
+              "2025-09-17": [
+                {
+                  "start": "2025-09-17T00:05:34.000Z",
+                  "end": "2025-09-17T01:31:48.000Z"
+                }
+              ],
+              "2025-09-29": [
+                {
+                  "start": "2025-09-28T23:40:50.000Z",
+                  "end": "2025-09-29T01:19:26.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-09-03": [
+                {
+                  "start": "2025-09-03T01:06:00.000Z",
+                  "end": "2025-09-03T01:26:19.000Z"
+                }
+              ],
+              "2025-09-04": [
+                {
+                  "start": "2025-09-04T00:58:58.000Z",
+                  "end": "2025-09-04T01:41:12.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-11T00:27:00.000Z",
+                  "end": "2025-09-11T02:00:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-11-11T05:08:18.191Z"
+    },
+    {
+      "id": "sch_1762837720894",
+      "user_id": "default",
+      "month": "2025-10",
+      "amount": 1349.8341049382716,
+      "details": {
+        "calculationId": "2025_10",
+        "studentCount": 7,
+        "totalHours": 79.33305555555556,
+        "monthlyStipend": 1500,
+        "workableDays": 27,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "02:00"
+          },
+          {
+            "startDate": "2025-10-16T00:00:00.000Z",
+            "sederStart": "02:30"
+          },
+          {
+            "startDate": "2025-10-26T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 24.978333333333335,
+            "baseStipend": 419.5293209876544,
+            "bonusStipend": 0,
+            "finalStipend": 419.5293209876544
+          },
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 21.872222222222224,
+            "baseStipend": 361.2885802469136,
+            "bonusStipend": 0,
+            "finalStipend": 361.2885802469136
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 10.810555555555556,
+            "baseStipend": 203.07098765432096,
+            "bonusStipend": 0,
+            "finalStipend": 203.07098765432096
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 7.546388888888889,
+            "baseStipend": 145.5246913580247,
+            "bonusStipend": 0,
+            "finalStipend": 145.5246913580247
+          },
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 7.329444444444444,
+            "baseStipend": 115.90663580246914,
+            "bonusStipend": 0,
+            "finalStipend": 115.90663580246914
+          },
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 2.95,
+            "baseStipend": 54.16666666666667,
+            "bonusStipend": 0,
+            "finalStipend": 54.16666666666667
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 3.846111111111111,
+            "baseStipend": 50.34722222222223,
+            "bonusStipend": 0,
+            "finalStipend": 50.34722222222223
+          }
+        ],
+        "rawStudentData": {
+          "203987235": {
+            "name": "אורי דוד",
+            "dailySessions": {
+              "2025-10-01": [
+                {
+                  "start": "2025-09-30T23:03:00.000Z",
+                  "end": "2025-10-01T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:30:00.000Z",
+                  "end": "2025-10-16T02:06:54.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:34:07.000Z",
+                  "end": "2025-10-20T01:30:00.000Z"
+                }
+              ],
+              "2025-10-27": [
+                {
+                  "start": "2025-10-26T23:30:00.000Z",
+                  "end": "2025-10-27T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-10-08": [
+                {
+                  "start": "2025-10-08T00:31:57.000Z",
+                  "end": "2025-10-08T01:30:00.000Z"
+                }
+              ],
+              "2025-10-26": [
+                {
+                  "start": "2025-10-26T01:34:10.000Z",
+                  "end": "2025-10-26T02:30:00.000Z"
+                }
+              ],
+              "2025-10-30": [
+                {
+                  "start": "2025-10-29T23:47:26.000Z",
+                  "end": "2025-10-30T01:44:19.000Z"
+                }
+              ]
+            }
+          },
+          "314752775": {
+            "name": "מאיר חנון",
+            "dailySessions": {
+              "2025-10-22": [
+                {
+                  "start": "2025-10-21T23:30:00.000Z",
+                  "end": "2025-10-22T01:46:44.000Z"
+                }
+              ],
+              "2025-10-23": [
+                {
+                  "start": "2025-10-23T00:46:13.000Z",
+                  "end": "2025-10-23T02:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-28T00:29:03.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-31T01:11:42.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {
+              "2025-10-03": [
+                {
+                  "start": "2025-10-03T00:10:54.000Z",
+                  "end": "2025-10-03T02:00:00.000Z"
+                }
+              ],
+              "2025-10-05": [
+                {
+                  "start": "2025-10-04T23:15:45.000Z",
+                  "end": "2025-10-05T02:00:00.000Z"
+                }
+              ],
+              "2025-10-06": [
+                {
+                  "start": "2025-10-05T23:14:04.000Z",
+                  "end": "2025-10-06T02:00:00.000Z"
+                }
+              ],
+              "2025-10-09": [
+                {
+                  "start": "2025-10-08T23:21:45.000Z",
+                  "end": "2025-10-09T02:00:00.000Z"
+                }
+              ],
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:30:00.000Z",
+                  "end": "2025-10-16T02:30:00.000Z"
+                }
+              ],
+              "2025-10-17": [
+                {
+                  "start": "2025-10-17T00:48:04.000Z",
+                  "end": "2025-10-17T02:30:00.000Z"
+                }
+              ],
+              "2025-10-19": [
+                {
+                  "start": "2025-10-18T23:30:00.000Z",
+                  "end": "2025-10-19T02:30:00.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-20T00:47:37.000Z",
+                  "end": "2025-10-20T02:30:00.000Z"
+                }
+              ],
+              "2025-10-21": [
+                {
+                  "start": "2025-10-21T00:47:41.000Z",
+                  "end": "2025-10-21T02:30:00.000Z"
+                }
+              ],
+              "2025-10-24": [
+                {
+                  "start": "2025-10-24T01:41:50.000Z",
+                  "end": "2025-10-24T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:30:45.000Z",
+                  "end": "2025-10-20T01:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-27T23:30:00.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-29": [
+                {
+                  "start": "2025-10-28T23:30:00.000Z",
+                  "end": "2025-10-29T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-30T23:40:37.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:46:53.000Z",
+                  "end": "2025-10-16T02:30:00.000Z"
+                }
+              ],
+              "2025-10-17": [
+                {
+                  "start": "2025-10-17T00:11:04.000Z",
+                  "end": "2025-10-17T02:30:00.000Z"
+                }
+              ],
+              "2025-10-19": [
+                {
+                  "start": "2025-10-19T00:28:35.000Z",
+                  "end": "2025-10-19T02:15:33.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:47:54.000Z",
+                  "end": "2025-10-20T02:30:00.000Z"
+                }
+              ],
+              "2025-10-22": [
+                {
+                  "start": "2025-10-21T23:30:00.000Z",
+                  "end": "2025-10-22T02:30:00.000Z"
+                }
+              ],
+              "2025-10-23": [
+                {
+                  "start": "2025-10-23T00:06:42.000Z",
+                  "end": "2025-10-23T02:30:00.000Z"
+                }
+              ],
+              "2025-10-27": [
+                {
+                  "start": "2025-10-27T00:30:31.000Z",
+                  "end": "2025-10-27T02:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-27T23:49:57.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-29": [
+                {
+                  "start": "2025-10-28T23:57:15.000Z",
+                  "end": "2025-10-29T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-30T23:38:00.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-11-11T05:08:40.894Z"
+    },
+    {
+      "id": "sch_1762837735094",
+      "user_id": "default",
+      "month": "2025-10",
+      "amount": 1348.1770833333335,
+      "details": {
+        "calculationId": "2025_10",
+        "studentCount": 7,
+        "totalHours": 79.33305555555556,
+        "monthlyStipend": 1500,
+        "workableDays": 24,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 24.978333333333335,
+            "baseStipend": 407.04427083333337,
+            "bonusStipend": 0,
+            "finalStipend": 407.04427083333337
+          },
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 21.872222222222224,
+            "baseStipend": 343.9496527777778,
+            "bonusStipend": 0,
+            "finalStipend": 343.9496527777778
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 10.810555555555556,
+            "baseStipend": 202.734375,
+            "bonusStipend": 0,
+            "finalStipend": 202.734375
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 7.546388888888889,
+            "baseStipend": 138.48090277777777,
+            "bonusStipend": 0,
+            "finalStipend": 138.48090277777777
+          },
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 7.329444444444444,
+            "baseStipend": 122.58246527777777,
+            "bonusStipend": 0,
+            "finalStipend": 122.58246527777777
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 3.846111111111111,
+            "baseStipend": 72.44791666666667,
+            "bonusStipend": 0,
+            "finalStipend": 72.44791666666667
+          },
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 2.95,
+            "baseStipend": 60.9375,
+            "bonusStipend": 0,
+            "finalStipend": 60.9375
+          }
+        ],
+        "rawStudentData": {
+          "203987235": {
+            "name": "אורי דוד",
+            "dailySessions": {
+              "2025-10-01": [
+                {
+                  "start": "2025-09-30T23:03:00.000Z",
+                  "end": "2025-10-01T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:30:00.000Z",
+                  "end": "2025-10-16T02:06:54.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:34:07.000Z",
+                  "end": "2025-10-20T01:30:00.000Z"
+                }
+              ],
+              "2025-10-27": [
+                {
+                  "start": "2025-10-26T23:30:00.000Z",
+                  "end": "2025-10-27T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-10-08": [
+                {
+                  "start": "2025-10-08T00:31:57.000Z",
+                  "end": "2025-10-08T01:30:00.000Z"
+                }
+              ],
+              "2025-10-26": [
+                {
+                  "start": "2025-10-26T01:34:10.000Z",
+                  "end": "2025-10-26T02:30:00.000Z"
+                }
+              ],
+              "2025-10-30": [
+                {
+                  "start": "2025-10-29T23:47:26.000Z",
+                  "end": "2025-10-30T01:44:19.000Z"
+                }
+              ]
+            }
+          },
+          "314752775": {
+            "name": "מאיר חנון",
+            "dailySessions": {
+              "2025-10-22": [
+                {
+                  "start": "2025-10-21T23:30:00.000Z",
+                  "end": "2025-10-22T01:46:44.000Z"
+                }
+              ],
+              "2025-10-23": [
+                {
+                  "start": "2025-10-23T00:46:13.000Z",
+                  "end": "2025-10-23T02:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-28T00:29:03.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-31T01:11:42.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {
+              "2025-10-03": [
+                {
+                  "start": "2025-10-03T00:10:54.000Z",
+                  "end": "2025-10-03T02:00:00.000Z"
+                }
+              ],
+              "2025-10-05": [
+                {
+                  "start": "2025-10-04T23:15:45.000Z",
+                  "end": "2025-10-05T02:00:00.000Z"
+                }
+              ],
+              "2025-10-06": [
+                {
+                  "start": "2025-10-05T23:14:04.000Z",
+                  "end": "2025-10-06T02:00:00.000Z"
+                }
+              ],
+              "2025-10-09": [
+                {
+                  "start": "2025-10-08T23:21:45.000Z",
+                  "end": "2025-10-09T02:00:00.000Z"
+                }
+              ],
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:30:00.000Z",
+                  "end": "2025-10-16T02:30:00.000Z"
+                }
+              ],
+              "2025-10-17": [
+                {
+                  "start": "2025-10-17T00:48:04.000Z",
+                  "end": "2025-10-17T02:30:00.000Z"
+                }
+              ],
+              "2025-10-19": [
+                {
+                  "start": "2025-10-18T23:30:00.000Z",
+                  "end": "2025-10-19T02:30:00.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-20T00:47:37.000Z",
+                  "end": "2025-10-20T02:30:00.000Z"
+                }
+              ],
+              "2025-10-21": [
+                {
+                  "start": "2025-10-21T00:47:41.000Z",
+                  "end": "2025-10-21T02:30:00.000Z"
+                }
+              ],
+              "2025-10-24": [
+                {
+                  "start": "2025-10-24T01:41:50.000Z",
+                  "end": "2025-10-24T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:30:45.000Z",
+                  "end": "2025-10-20T01:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-27T23:30:00.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-29": [
+                {
+                  "start": "2025-10-28T23:30:00.000Z",
+                  "end": "2025-10-29T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-30T23:40:37.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:46:53.000Z",
+                  "end": "2025-10-16T02:30:00.000Z"
+                }
+              ],
+              "2025-10-17": [
+                {
+                  "start": "2025-10-17T00:11:04.000Z",
+                  "end": "2025-10-17T02:30:00.000Z"
+                }
+              ],
+              "2025-10-19": [
+                {
+                  "start": "2025-10-19T00:28:35.000Z",
+                  "end": "2025-10-19T02:15:33.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:47:54.000Z",
+                  "end": "2025-10-20T02:30:00.000Z"
+                }
+              ],
+              "2025-10-22": [
+                {
+                  "start": "2025-10-21T23:30:00.000Z",
+                  "end": "2025-10-22T02:30:00.000Z"
+                }
+              ],
+              "2025-10-23": [
+                {
+                  "start": "2025-10-23T00:06:42.000Z",
+                  "end": "2025-10-23T02:30:00.000Z"
+                }
+              ],
+              "2025-10-27": [
+                {
+                  "start": "2025-10-27T00:30:31.000Z",
+                  "end": "2025-10-27T02:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-27T23:49:57.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-29": [
+                {
+                  "start": "2025-10-28T23:57:15.000Z",
+                  "end": "2025-10-29T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-30T23:38:00.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-11-11T05:08:55.094Z"
+    },
+    {
+      "id": "sch_1762837802214",
+      "user_id": "default",
+      "month": "2025-09",
+      "amount": 2107.385850694445,
+      "details": {
+        "calculationId": "2025_09",
+        "studentCount": 8,
+        "totalHours": 97.63472222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 24,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 50.36916666666668,
+            "baseStipend": 1017.8689236111112,
+            "bonusStipend": 165.74956597222223,
+            "finalStipend": 1183.6184895833335
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 14.434166666666666,
+            "baseStipend": 280.72916666666663,
+            "bonusStipend": 0,
+            "finalStipend": 280.72916666666663
+          },
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 9.72888888888889,
+            "baseStipend": 209.14496527777777,
+            "bonusStipend": 0,
+            "finalStipend": 209.14496527777777
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 8.988888888888887,
+            "baseStipend": 186.69704861111111,
+            "bonusStipend": 0,
+            "finalStipend": 186.69704861111111
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 8.457222222222223,
+            "baseStipend": 152.76041666666666,
+            "bonusStipend": 0,
+            "finalStipend": 152.76041666666666
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 2.5925000000000002,
+            "baseStipend": 40.5078125,
+            "bonusStipend": 0,
+            "finalStipend": 40.5078125
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 1.8305555555555555,
+            "baseStipend": 34.65711805555556,
+            "bonusStipend": 0,
+            "finalStipend": 34.65711805555556
+          },
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 1.2333333333333334,
+            "baseStipend": 19.270833333333336,
+            "bonusStipend": 0,
+            "finalStipend": 19.270833333333336
+          }
+        ],
+        "rawStudentData": {
+          "203987235": {
+            "name": "אורי דוד",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:00:00.000Z",
+                  "end": "2025-09-01T01:30:00.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-10T23:15:25.000Z",
+                  "end": "2025-09-11T01:30:34.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-14T23:05:12.000Z",
+                  "end": "2025-09-15T01:31:25.000Z"
+                }
+              ],
+              "2025-09-29": [
+                {
+                  "start": "2025-09-28T23:00:00.000Z",
+                  "end": "2025-09-29T01:32:22.000Z"
+                }
+              ]
+            }
+          },
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:00:00.000Z",
+                  "end": "2025-09-01T01:24:59.000Z"
+                }
+              ],
+              "2025-09-09": [
+                {
+                  "start": "2025-09-08T23:00:00.000Z",
+                  "end": "2025-09-09T01:35:13.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-09T23:02:25.000Z",
+                  "end": "2025-09-10T01:35:37.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-15T00:10:09.000Z",
+                  "end": "2025-09-15T01:36:05.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-09-02": [
+                {
+                  "start": "2025-09-02T00:34:49.000Z",
+                  "end": "2025-09-02T02:00:00.000Z"
+                }
+              ],
+              "2025-09-07": [
+                {
+                  "start": "2025-09-06T23:00:23.000Z",
+                  "end": "2025-09-07T01:02:06.000Z"
+                }
+              ],
+              "2025-09-09": [
+                {
+                  "start": "2025-09-08T23:19:31.000Z",
+                  "end": "2025-09-09T02:00:00.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-09T23:11:09.000Z",
+                  "end": "2025-09-10T01:51:23.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-11T00:27:07.000Z",
+                  "end": "2025-09-11T02:00:00.000Z"
+                }
+              ],
+              "2025-09-14": [
+                {
+                  "start": "2025-09-13T23:00:00.000Z",
+                  "end": "2025-09-13T23:45:00.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-15T00:57:27.000Z",
+                  "end": "2025-09-15T02:00:00.000Z"
+                }
+              ],
+              "2025-09-16": [
+                {
+                  "start": "2025-09-15T23:42:00.000Z",
+                  "end": "2025-09-16T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "314752775": {
+            "name": "מאיר חנון",
+            "dailySessions": {
+              "2025-09-30": [
+                {
+                  "start": "2025-09-30T00:46:00.000Z",
+                  "end": "2025-09-30T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:01:24.000Z",
+                  "end": "2025-09-01T02:00:00.000Z"
+                }
+              ],
+              "2025-09-02": [
+                {
+                  "start": "2025-09-01T23:00:18.000Z",
+                  "end": "2025-09-02T02:00:00.000Z"
+                }
+              ],
+              "2025-09-03": [
+                {
+                  "start": "2025-09-02T23:00:00.000Z",
+                  "end": "2025-09-03T02:00:00.000Z"
+                }
+              ],
+              "2025-09-04": [
+                {
+                  "start": "2025-09-03T23:09:06.000Z",
+                  "end": "2025-09-04T02:00:00.000Z"
+                }
+              ],
+              "2025-09-05": [
+                {
+                  "start": "2025-09-04T23:02:54.000Z",
+                  "end": "2025-09-05T02:00:00.000Z"
+                }
+              ],
+              "2025-09-07": [
+                {
+                  "start": "2025-09-06T23:03:36.000Z",
+                  "end": "2025-09-07T02:00:00.000Z"
+                }
+              ],
+              "2025-09-08": [
+                {
+                  "start": "2025-09-07T23:00:00.000Z",
+                  "end": "2025-09-08T02:00:00.000Z"
+                }
+              ],
+              "2025-09-09": [
+                {
+                  "start": "2025-09-09T00:47:40.000Z",
+                  "end": "2025-09-09T02:00:00.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-10T01:03:59.000Z",
+                  "end": "2025-09-10T02:00:00.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-10T23:09:49.000Z",
+                  "end": "2025-09-11T02:00:00.000Z"
+                }
+              ],
+              "2025-09-12": [
+                {
+                  "start": "2025-09-11T23:00:00.000Z",
+                  "end": "2025-09-12T02:00:00.000Z"
+                }
+              ],
+              "2025-09-14": [
+                {
+                  "start": "2025-09-13T23:00:00.000Z",
+                  "end": "2025-09-14T02:00:00.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-14T23:00:00.000Z",
+                  "end": "2025-09-15T02:00:00.000Z"
+                }
+              ],
+              "2025-09-16": [
+                {
+                  "start": "2025-09-15T23:00:04.000Z",
+                  "end": "2025-09-16T02:00:00.000Z"
+                }
+              ],
+              "2025-09-17": [
+                {
+                  "start": "2025-09-16T23:00:00.000Z",
+                  "end": "2025-09-17T02:00:00.000Z"
+                }
+              ],
+              "2025-09-18": [
+                {
+                  "start": "2025-09-17T23:39:24.000Z",
+                  "end": "2025-09-18T02:00:00.000Z"
+                }
+              ],
+              "2025-09-19": [
+                {
+                  "start": "2025-09-18T23:05:25.000Z",
+                  "end": "2025-09-19T02:00:00.000Z"
+                }
+              ],
+              "2025-09-21": [
+                {
+                  "start": "2025-09-21T00:55:02.000Z",
+                  "end": "2025-09-21T02:00:00.000Z"
+                }
+              ],
+              "2025-09-22": [
+                {
+                  "start": "2025-09-22T00:52:27.000Z",
+                  "end": "2025-09-22T02:00:00.000Z"
+                }
+              ],
+              "2025-09-25": [
+                {
+                  "start": "2025-09-24T23:01:32.000Z",
+                  "end": "2025-09-25T01:14:49.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-09-02": [
+                {
+                  "start": "2025-09-01T23:36:45.000Z",
+                  "end": "2025-09-02T01:26:35.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:00:00.000Z",
+                  "end": "2025-09-01T01:30:00.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-10T00:04:50.000Z",
+                  "end": "2025-09-10T01:53:33.000Z"
+                }
+              ],
+              "2025-09-16": [
+                {
+                  "start": "2025-09-16T00:29:30.000Z",
+                  "end": "2025-09-16T01:33:23.000Z"
+                }
+              ],
+              "2025-09-17": [
+                {
+                  "start": "2025-09-17T00:05:34.000Z",
+                  "end": "2025-09-17T01:31:48.000Z"
+                }
+              ],
+              "2025-09-29": [
+                {
+                  "start": "2025-09-28T23:40:50.000Z",
+                  "end": "2025-09-29T01:19:26.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-09-03": [
+                {
+                  "start": "2025-09-03T01:06:00.000Z",
+                  "end": "2025-09-03T01:26:19.000Z"
+                }
+              ],
+              "2025-09-04": [
+                {
+                  "start": "2025-09-04T00:58:58.000Z",
+                  "end": "2025-09-04T01:41:12.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-11T00:27:00.000Z",
+                  "end": "2025-09-11T02:00:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-11-11T05:10:02.214Z"
+    },
+    {
+      "id": "sch_1762837882086",
+      "user_id": "default",
+      "month": "2025-10",
+      "amount": 1348.1770833333335,
+      "details": {
+        "calculationId": "2025_10",
+        "studentCount": 7,
+        "totalHours": 79.33305555555556,
+        "monthlyStipend": 1500,
+        "workableDays": 24,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 24.978333333333335,
+            "baseStipend": 407.04427083333337,
+            "bonusStipend": 0,
+            "finalStipend": 407.04427083333337
+          },
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 21.872222222222224,
+            "baseStipend": 343.9496527777778,
+            "bonusStipend": 0,
+            "finalStipend": 343.9496527777778
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 10.810555555555556,
+            "baseStipend": 202.734375,
+            "bonusStipend": 0,
+            "finalStipend": 202.734375
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 7.546388888888889,
+            "baseStipend": 138.48090277777777,
+            "bonusStipend": 0,
+            "finalStipend": 138.48090277777777
+          },
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 7.329444444444444,
+            "baseStipend": 122.58246527777777,
+            "bonusStipend": 0,
+            "finalStipend": 122.58246527777777
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 3.846111111111111,
+            "baseStipend": 72.44791666666667,
+            "bonusStipend": 0,
+            "finalStipend": 72.44791666666667
+          },
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 2.95,
+            "baseStipend": 60.9375,
+            "bonusStipend": 0,
+            "finalStipend": 60.9375
+          }
+        ],
+        "rawStudentData": {
+          "203987235": {
+            "name": "אורי דוד",
+            "dailySessions": {
+              "2025-10-01": [
+                {
+                  "start": "2025-09-30T23:03:00.000Z",
+                  "end": "2025-10-01T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:30:00.000Z",
+                  "end": "2025-10-16T02:06:54.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:34:07.000Z",
+                  "end": "2025-10-20T01:30:00.000Z"
+                }
+              ],
+              "2025-10-27": [
+                {
+                  "start": "2025-10-26T23:30:00.000Z",
+                  "end": "2025-10-27T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-10-08": [
+                {
+                  "start": "2025-10-08T00:31:57.000Z",
+                  "end": "2025-10-08T01:30:00.000Z"
+                }
+              ],
+              "2025-10-26": [
+                {
+                  "start": "2025-10-26T01:34:10.000Z",
+                  "end": "2025-10-26T02:30:00.000Z"
+                }
+              ],
+              "2025-10-30": [
+                {
+                  "start": "2025-10-29T23:47:26.000Z",
+                  "end": "2025-10-30T01:44:19.000Z"
+                }
+              ]
+            }
+          },
+          "314752775": {
+            "name": "מאיר חנון",
+            "dailySessions": {
+              "2025-10-22": [
+                {
+                  "start": "2025-10-21T23:30:00.000Z",
+                  "end": "2025-10-22T01:46:44.000Z"
+                }
+              ],
+              "2025-10-23": [
+                {
+                  "start": "2025-10-23T00:46:13.000Z",
+                  "end": "2025-10-23T02:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-28T00:29:03.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-31T01:11:42.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {
+              "2025-10-03": [
+                {
+                  "start": "2025-10-03T00:10:54.000Z",
+                  "end": "2025-10-03T02:00:00.000Z"
+                }
+              ],
+              "2025-10-05": [
+                {
+                  "start": "2025-10-04T23:15:45.000Z",
+                  "end": "2025-10-05T02:00:00.000Z"
+                }
+              ],
+              "2025-10-06": [
+                {
+                  "start": "2025-10-05T23:14:04.000Z",
+                  "end": "2025-10-06T02:00:00.000Z"
+                }
+              ],
+              "2025-10-09": [
+                {
+                  "start": "2025-10-08T23:21:45.000Z",
+                  "end": "2025-10-09T02:00:00.000Z"
+                }
+              ],
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:30:00.000Z",
+                  "end": "2025-10-16T02:30:00.000Z"
+                }
+              ],
+              "2025-10-17": [
+                {
+                  "start": "2025-10-17T00:48:04.000Z",
+                  "end": "2025-10-17T02:30:00.000Z"
+                }
+              ],
+              "2025-10-19": [
+                {
+                  "start": "2025-10-18T23:30:00.000Z",
+                  "end": "2025-10-19T02:30:00.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-20T00:47:37.000Z",
+                  "end": "2025-10-20T02:30:00.000Z"
+                }
+              ],
+              "2025-10-21": [
+                {
+                  "start": "2025-10-21T00:47:41.000Z",
+                  "end": "2025-10-21T02:30:00.000Z"
+                }
+              ],
+              "2025-10-24": [
+                {
+                  "start": "2025-10-24T01:41:50.000Z",
+                  "end": "2025-10-24T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:30:45.000Z",
+                  "end": "2025-10-20T01:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-27T23:30:00.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-29": [
+                {
+                  "start": "2025-10-28T23:30:00.000Z",
+                  "end": "2025-10-29T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-30T23:40:37.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:46:53.000Z",
+                  "end": "2025-10-16T02:30:00.000Z"
+                }
+              ],
+              "2025-10-17": [
+                {
+                  "start": "2025-10-17T00:11:04.000Z",
+                  "end": "2025-10-17T02:30:00.000Z"
+                }
+              ],
+              "2025-10-19": [
+                {
+                  "start": "2025-10-19T00:28:35.000Z",
+                  "end": "2025-10-19T02:15:33.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:47:54.000Z",
+                  "end": "2025-10-20T02:30:00.000Z"
+                }
+              ],
+              "2025-10-22": [
+                {
+                  "start": "2025-10-21T23:30:00.000Z",
+                  "end": "2025-10-22T02:30:00.000Z"
+                }
+              ],
+              "2025-10-23": [
+                {
+                  "start": "2025-10-23T00:06:42.000Z",
+                  "end": "2025-10-23T02:30:00.000Z"
+                }
+              ],
+              "2025-10-27": [
+                {
+                  "start": "2025-10-27T00:30:31.000Z",
+                  "end": "2025-10-27T02:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-27T23:49:57.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-29": [
+                {
+                  "start": "2025-10-28T23:57:15.000Z",
+                  "end": "2025-10-29T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-30T23:38:00.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-11-11T05:11:22.086Z"
+    },
+    {
+      "id": "sch_1765856895672",
+      "user_id": "default",
+      "month": "2025-11",
+      "amount": 1711.1295833333334,
+      "details": {
+        "calculationId": "2025_11",
+        "studentCount": 5,
+        "totalHours": 85.72805555555554,
+        "monthlyStipend": 1500,
+        "workableDays": 25,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 40.04388888888889,
+            "baseStipend": 783.825,
+            "bonusStipend": 91.44208333333334,
+            "finalStipend": 875.2670833333334
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 19.212777777777777,
+            "baseStipend": 354.62083333333334,
+            "bonusStipend": 0,
+            "finalStipend": 354.62083333333334
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 10.099999999999998,
+            "baseStipend": 202.56666666666666,
+            "bonusStipend": 0,
+            "finalStipend": 202.56666666666666
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 10.382777777777779,
+            "baseStipend": 183.42499999999998,
+            "bonusStipend": 0,
+            "finalStipend": 183.42499999999998
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 5.988611111111111,
+            "baseStipend": 95.25,
+            "bonusStipend": 0,
+            "finalStipend": 95.25
+          }
+        ],
+        "rawStudentData": {
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-11-03": [
+                {
+                  "start": "2025-11-03T00:09:16.000Z",
+                  "end": "2025-11-03T02:30:00.000Z"
+                }
+              ],
+              "2025-11-04": [
+                {
+                  "start": "2025-11-04T00:37:14.000Z",
+                  "end": "2025-11-04T02:30:00.000Z"
+                }
+              ],
+              "2025-11-05": [
+                {
+                  "start": "2025-11-04T23:30:00.000Z",
+                  "end": "2025-11-05T00:57:25.000Z"
+                }
+              ],
+              "2025-11-06": [
+                {
+                  "start": "2025-11-05T23:30:00.000Z",
+                  "end": "2025-11-06T00:33:41.000Z"
+                }
+              ],
+              "2025-11-11": [
+                {
+                  "start": "2025-11-11T01:14:24.000Z",
+                  "end": "2025-11-11T02:30:00.000Z"
+                }
+              ],
+              "2025-11-24": [
+                {
+                  "start": "2025-11-24T01:28:14.000Z",
+                  "end": "2025-11-24T02:30:00.000Z"
+                }
+              ],
+              "2025-11-25": [
+                {
+                  "start": "2025-11-25T01:39:00.000Z",
+                  "end": "2025-11-25T03:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-11-02": [
+                {
+                  "start": "2025-11-02T00:53:53.000Z",
+                  "end": "2025-11-02T02:30:00.000Z"
+                }
+              ],
+              "2025-11-10": [
+                {
+                  "start": "2025-11-10T01:17:46.000Z",
+                  "end": "2025-11-10T02:30:00.000Z"
+                }
+              ],
+              "2025-11-17": [
+                {
+                  "start": "2025-11-17T01:40:43.000Z",
+                  "end": "2025-11-17T02:30:00.000Z"
+                }
+              ],
+              "2025-11-18": [
+                {
+                  "start": "2025-11-18T00:08:19.000Z",
+                  "end": "2025-11-18T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "314752775": {
+            "name": "מאיר חנון",
+            "dailySessions": {
+              "2025-11-04": [
+                {
+                  "start": "2025-11-04T02:21:50.000Z",
+                  "end": "2025-11-04T02:30:00.000Z"
+                }
+              ],
+              "2025-11-05": [
+                {
+                  "start": "2025-11-05T00:07:43.000Z",
+                  "end": "2025-11-05T02:30:00.000Z"
+                }
+              ],
+              "2025-11-06": [
+                {
+                  "start": "2025-11-05T23:52:55.000Z",
+                  "end": "2025-11-06T02:30:00.000Z"
+                }
+              ],
+              "2025-11-07": [
+                {
+                  "start": "2025-11-06T23:32:01.000Z",
+                  "end": "2025-11-07T00:33:48.000Z"
+                }
+              ],
+              "2025-11-09": [
+                {
+                  "start": "2025-11-08T23:30:00.000Z",
+                  "end": "2025-11-09T02:30:00.000Z"
+                }
+              ],
+              "2025-11-10": [
+                {
+                  "start": "2025-11-10T00:56:03.000Z",
+                  "end": "2025-11-10T02:30:00.000Z"
+                }
+              ],
+              "2025-11-11": [
+                {
+                  "start": "2025-11-10T23:30:00.000Z",
+                  "end": "2025-11-11T02:30:00.000Z"
+                }
+              ],
+              "2025-11-12": [
+                {
+                  "start": "2025-11-11T23:30:00.000Z",
+                  "end": "2025-11-12T02:30:00.000Z"
+                }
+              ],
+              "2025-11-13": [
+                {
+                  "start": "2025-11-12T23:30:00.000Z",
+                  "end": "2025-11-13T02:30:00.000Z"
+                }
+              ],
+              "2025-11-14": [
+                {
+                  "start": "2025-11-14T00:22:18.000Z",
+                  "end": "2025-11-14T02:30:00.000Z"
+                }
+              ],
+              "2025-11-16": [
+                {
+                  "start": "2025-11-15T23:30:00.000Z",
+                  "end": "2025-11-15T23:41:23.000Z"
+                }
+              ],
+              "2025-11-17": [
+                {
+                  "start": "2025-11-17T00:47:31.000Z",
+                  "end": "2025-11-17T02:30:00.000Z"
+                }
+              ],
+              "2025-11-18": [
+                {
+                  "start": "2025-11-17T23:33:46.000Z",
+                  "end": "2025-11-18T02:30:00.000Z"
+                }
+              ],
+              "2025-11-19": [
+                {
+                  "start": "2025-11-18T23:30:00.000Z",
+                  "end": "2025-11-19T02:30:00.000Z"
+                }
+              ],
+              "2025-11-21": [
+                {
+                  "start": "2025-11-20T23:30:00.000Z",
+                  "end": "2025-11-21T02:30:00.000Z"
+                }
+              ],
+              "2025-11-23": [
+                {
+                  "start": "2025-11-22T23:30:00.000Z",
+                  "end": "2025-11-23T02:30:00.000Z"
+                }
+              ],
+              "2025-11-26": [
+                {
+                  "start": "2025-11-25T23:30:00.000Z",
+                  "end": "2025-11-26T02:30:00.000Z"
+                }
+              ],
+              "2025-11-27": [
+                {
+                  "start": "2025-11-26T23:30:00.000Z",
+                  "end": "2025-11-27T00:51:34.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-11-02": [
+                {
+                  "start": "2025-11-01T23:34:07.000Z",
+                  "end": "2025-11-02T02:24:46.000Z"
+                }
+              ],
+              "2025-11-20": [
+                {
+                  "start": "2025-11-19T23:30:58.000Z",
+                  "end": "2025-11-20T00:11:35.000Z"
+                }
+              ],
+              "2025-11-27": [
+                {
+                  "start": "2025-11-27T01:13:31.000Z",
+                  "end": "2025-11-27T02:30:00.000Z"
+                }
+              ],
+              "2025-11-28": [
+                {
+                  "start": "2025-11-27T23:31:28.000Z",
+                  "end": "2025-11-28T02:30:00.000Z"
+                }
+              ],
+              "2025-11-30": [
+                {
+                  "start": "2025-11-29T23:33:56.000Z",
+                  "end": "2025-11-29T23:56:38.000Z"
+                },
+                {
+                  "start": "2025-11-30T00:03:28.000Z",
+                  "end": "2025-11-30T00:32:49.000Z"
+                },
+                {
+                  "start": "2025-11-30T00:40:06.000Z",
+                  "end": "2025-11-30T01:08:43.000Z"
+                },
+                {
+                  "start": "2025-11-30T01:14:34.000Z",
+                  "end": "2025-11-30T02:13:37.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-11-02": [
+                {
+                  "start": "2025-11-02T00:27:09.000Z",
+                  "end": "2025-11-02T02:30:00.000Z"
+                }
+              ],
+              "2025-11-04": [
+                {
+                  "start": "2025-11-04T00:56:06.000Z",
+                  "end": "2025-11-04T02:30:00.000Z"
+                }
+              ],
+              "2025-11-05": [
+                {
+                  "start": "2025-11-04T23:30:00.000Z",
+                  "end": "2025-11-05T02:30:00.000Z"
+                }
+              ],
+              "2025-11-09": [
+                {
+                  "start": "2025-11-08T23:44:29.000Z",
+                  "end": "2025-11-09T02:30:00.000Z"
+                }
+              ],
+              "2025-11-10": [
+                {
+                  "start": "2025-11-10T01:16:51.000Z",
+                  "end": "2025-11-10T02:30:00.000Z"
+                }
+              ],
+              "2025-11-12": [
+                {
+                  "start": "2025-11-11T23:30:00.000Z",
+                  "end": "2025-11-12T02:30:00.000Z"
+                }
+              ],
+              "2025-11-14": [
+                {
+                  "start": "2025-11-13T23:47:38.000Z",
+                  "end": "2025-11-14T02:30:00.000Z"
+                }
+              ],
+              "2025-11-21": [
+                {
+                  "start": "2025-11-20T23:35:01.000Z",
+                  "end": "2025-11-21T02:30:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-12-16T03:48:15.672Z"
+    },
+    {
+      "id": "sch_1765857792471",
+      "user_id": "default",
+      "month": "2025-07",
+      "amount": 706.073717948718,
+      "details": {
+        "calculationId": "2025_07",
+        "studentCount": 3,
+        "totalHours": 40.75222222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 17.646944444444443,
+            "baseStipend": 319.1426282051283,
+            "bonusStipend": 0,
+            "finalStipend": 319.1426282051283
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 14.728055555555555,
+            "baseStipend": 237.25961538461542,
+            "bonusStipend": 0,
+            "finalStipend": 237.25961538461542
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 8.377222222222223,
+            "baseStipend": 149.67147435897436,
+            "bonusStipend": 0,
+            "finalStipend": 149.67147435897436
+          }
+        ],
+        "rawStudentData": {
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-07-20": [
+                {
+                  "start": "2025-07-19T22:40:00.000Z",
+                  "end": "2025-07-20T01:20:00.000Z"
+                }
+              ],
+              "2025-07-21": [
+                {
+                  "start": "2025-07-20T22:45:00.000Z",
+                  "end": "2025-07-21T01:20:00.000Z"
+                }
+              ],
+              "2025-07-23": [
+                {
+                  "start": "2025-07-22T23:15:00.000Z",
+                  "end": "2025-07-23T01:20:00.000Z"
+                }
+              ],
+              "2025-07-25": [
+                {
+                  "start": "2025-07-24T22:30:00.000Z",
+                  "end": "2025-07-25T01:30:00.000Z"
+                }
+              ],
+              "2025-07-27": [
+                {
+                  "start": "2025-07-26T22:50:00.000Z",
+                  "end": "2025-07-27T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-27T22:31:11.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:50:00.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-07-23": [
+                {
+                  "start": "2025-07-22T22:30:00.000Z",
+                  "end": "2025-07-23T01:30:00.000Z"
+                }
+              ],
+              "2025-07-24": [
+                {
+                  "start": "2025-07-23T22:30:00.000Z",
+                  "end": "2025-07-24T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-28T00:48:54.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:48:28.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-07-20": [
+                {
+                  "start": "2025-07-19T23:30:00.000Z",
+                  "end": "2025-07-20T01:30:00.000Z"
+                }
+              ],
+              "2025-07-21": [
+                {
+                  "start": "2025-07-20T23:30:00.000Z",
+                  "end": "2025-07-21T01:30:00.000Z"
+                }
+              ],
+              "2025-07-25": [
+                {
+                  "start": "2025-07-24T22:30:00.000Z",
+                  "end": "2025-07-25T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-27T23:35:27.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:37:50.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ],
+              "2025-07-30": [
+                {
+                  "start": "2025-07-29T22:46:41.000Z",
+                  "end": "2025-07-30T01:30:00.000Z"
+                }
+              ],
+              "2025-07-31": [
+                {
+                  "start": "2025-07-31T00:16:21.000Z",
+                  "end": "2025-07-31T01:30:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-12-16T04:03:12.471Z"
+    },
+    {
+      "id": "sch_1765857941967",
+      "user_id": "default",
+      "month": "2025-07",
+      "amount": 679.922839506173,
+      "details": {
+        "calculationId": "2025_07",
+        "studentCount": 3,
+        "totalHours": 40.75222222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 27,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 17.646944444444443,
+            "baseStipend": 307.3225308641976,
+            "bonusStipend": 0,
+            "finalStipend": 307.3225308641976
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 14.728055555555555,
+            "baseStipend": 228.47222222222223,
+            "bonusStipend": 0,
+            "finalStipend": 228.47222222222223
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 8.377222222222223,
+            "baseStipend": 144.1280864197531,
+            "bonusStipend": 0,
+            "finalStipend": 144.1280864197531
+          }
+        ],
+        "rawStudentData": {
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-07-20": [
+                {
+                  "start": "2025-07-19T22:40:00.000Z",
+                  "end": "2025-07-20T01:20:00.000Z"
+                }
+              ],
+              "2025-07-21": [
+                {
+                  "start": "2025-07-20T22:45:00.000Z",
+                  "end": "2025-07-21T01:20:00.000Z"
+                }
+              ],
+              "2025-07-23": [
+                {
+                  "start": "2025-07-22T23:15:00.000Z",
+                  "end": "2025-07-23T01:20:00.000Z"
+                }
+              ],
+              "2025-07-25": [
+                {
+                  "start": "2025-07-24T22:30:00.000Z",
+                  "end": "2025-07-25T01:30:00.000Z"
+                }
+              ],
+              "2025-07-27": [
+                {
+                  "start": "2025-07-26T22:50:00.000Z",
+                  "end": "2025-07-27T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-27T22:31:11.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:50:00.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-07-23": [
+                {
+                  "start": "2025-07-22T22:30:00.000Z",
+                  "end": "2025-07-23T01:30:00.000Z"
+                }
+              ],
+              "2025-07-24": [
+                {
+                  "start": "2025-07-23T22:30:00.000Z",
+                  "end": "2025-07-24T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-28T00:48:54.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:48:28.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-07-20": [
+                {
+                  "start": "2025-07-19T23:30:00.000Z",
+                  "end": "2025-07-20T01:30:00.000Z"
+                }
+              ],
+              "2025-07-21": [
+                {
+                  "start": "2025-07-20T23:30:00.000Z",
+                  "end": "2025-07-21T01:30:00.000Z"
+                }
+              ],
+              "2025-07-25": [
+                {
+                  "start": "2025-07-24T22:30:00.000Z",
+                  "end": "2025-07-25T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-27T23:35:27.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:37:50.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ],
+              "2025-07-30": [
+                {
+                  "start": "2025-07-29T22:46:41.000Z",
+                  "end": "2025-07-30T01:30:00.000Z"
+                }
+              ],
+              "2025-07-31": [
+                {
+                  "start": "2025-07-31T00:16:21.000Z",
+                  "end": "2025-07-31T01:30:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-12-16T04:05:41.967Z"
+    },
+    {
+      "id": "sch_1765858157187",
+      "user_id": "default",
+      "month": "2025-08",
+      "amount": 2231.2478632478633,
+      "details": {
+        "calculationId": "2025_08",
+        "studentCount": 6,
+        "totalHours": 116.05083333333334,
+        "monthlyStipend": 1500,
+        "workableDays": 26,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          },
+          {
+            "startDate": "2025-08-07T00:00:00.000Z",
+            "sederStart": "01:45"
+          },
+          {
+            "startDate": "2025-08-31T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 44.781111111111116,
+            "baseStipend": 822.3597756410255,
+            "bonusStipend": 86.24946581196582,
+            "finalStipend": 908.6092414529913
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 36.05861111111111,
+            "baseStipend": 658.4134615384615,
+            "bonusStipend": 0,
+            "finalStipend": 658.4134615384615
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 14.328611111111112,
+            "baseStipend": 260.60897435897436,
+            "bonusStipend": 43.96474358974359,
+            "finalStipend": 304.57371794871796
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 13.708333333333334,
+            "baseStipend": 234.1346153846154,
+            "bonusStipend": 0,
+            "finalStipend": 234.1346153846154
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 4.528333333333333,
+            "baseStipend": 72.93269230769232,
+            "bonusStipend": 0,
+            "finalStipend": 72.93269230769232
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 2.6458333333333335,
+            "baseStipend": 52.58413461538461,
+            "bonusStipend": 0,
+            "finalStipend": 52.58413461538461
+          }
+        ],
+        "rawStudentData": {
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-08-25": [
+                {
+                  "start": "2025-08-24T22:55:00.000Z",
+                  "end": "2025-08-25T00:40:00.000Z"
+                }
+              ],
+              "2025-08-26": [
+                {
+                  "start": "2025-08-25T23:10:00.000Z",
+                  "end": "2025-08-26T01:45:00.000Z"
+                }
+              ],
+              "2025-08-27": [
+                {
+                  "start": "2025-08-26T22:51:03.000Z",
+                  "end": "2025-08-27T01:45:00.000Z"
+                }
+              ],
+              "2025-08-28": [
+                {
+                  "start": "2025-08-27T22:57:05.000Z",
+                  "end": "2025-08-28T01:25:18.000Z"
+                }
+              ],
+              "2025-08-29": [
+                {
+                  "start": "2025-08-28T23:32:17.000Z",
+                  "end": "2025-08-29T01:45:00.000Z"
+                }
+              ],
+              "2025-08-31": [
+                {
+                  "start": "2025-08-30T23:35:10.000Z",
+                  "end": "2025-08-31T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-08-01": [
+                {
+                  "start": "2025-08-01T00:30:00.000Z",
+                  "end": "2025-08-01T01:30:00.000Z"
+                }
+              ],
+              "2025-08-03": [
+                {
+                  "start": "2025-08-02T23:23:39.000Z",
+                  "end": "2025-08-03T01:30:00.000Z"
+                }
+              ],
+              "2025-08-04": [
+                {
+                  "start": "2025-08-03T22:50:00.000Z",
+                  "end": "2025-08-04T01:30:00.000Z"
+                }
+              ],
+              "2025-08-07": [
+                {
+                  "start": "2025-08-06T22:53:35.000Z",
+                  "end": "2025-08-07T01:45:00.000Z"
+                }
+              ],
+              "2025-08-08": [
+                {
+                  "start": "2025-08-07T23:12:39.000Z",
+                  "end": "2025-08-08T01:45:00.000Z"
+                }
+              ],
+              "2025-08-10": [
+                {
+                  "start": "2025-08-09T22:51:00.000Z",
+                  "end": "2025-08-09T23:50:00.000Z"
+                }
+              ],
+              "2025-08-11": [
+                {
+                  "start": "2025-08-10T22:50:00.000Z",
+                  "end": "2025-08-11T01:45:00.000Z"
+                }
+              ],
+              "2025-08-14": [
+                {
+                  "start": "2025-08-13T22:48:25.000Z",
+                  "end": "2025-08-14T01:45:00.000Z"
+                }
+              ],
+              "2025-08-15": [
+                {
+                  "start": "2025-08-14T23:14:53.000Z",
+                  "end": "2025-08-15T01:45:00.000Z"
+                }
+              ],
+              "2025-08-17": [
+                {
+                  "start": "2025-08-16T22:50:00.000Z",
+                  "end": "2025-08-17T00:45:00.000Z"
+                }
+              ],
+              "2025-08-18": [
+                {
+                  "start": "2025-08-17T23:05:31.000Z",
+                  "end": "2025-08-18T01:45:00.000Z"
+                }
+              ],
+              "2025-08-19": [
+                {
+                  "start": "2025-08-18T22:51:46.000Z",
+                  "end": "2025-08-19T01:45:00.000Z"
+                }
+              ],
+              "2025-08-25": [
+                {
+                  "start": "2025-08-24T23:42:50.000Z",
+                  "end": "2025-08-25T01:45:00.000Z"
+                }
+              ],
+              "2025-08-26": [
+                {
+                  "start": "2025-08-25T22:59:13.000Z",
+                  "end": "2025-08-26T01:45:00.000Z"
+                }
+              ],
+              "2025-08-29": [
+                {
+                  "start": "2025-08-29T00:21:58.000Z",
+                  "end": "2025-08-29T01:45:00.000Z"
+                }
+              ],
+              "2025-08-31": [
+                {
+                  "start": "2025-08-30T23:06:00.000Z",
+                  "end": "2025-08-31T01:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {
+              "2025-08-04": [
+                {
+                  "start": "2025-08-04T00:15:00.000Z",
+                  "end": "2025-08-04T01:30:00.000Z"
+                }
+              ],
+              "2025-08-05": [
+                {
+                  "start": "2025-08-04T22:40:00.000Z",
+                  "end": "2025-08-05T01:30:00.000Z"
+                }
+              ],
+              "2025-08-06": [
+                {
+                  "start": "2025-08-05T22:40:00.000Z",
+                  "end": "2025-08-06T01:30:00.000Z"
+                }
+              ],
+              "2025-08-07": [
+                {
+                  "start": "2025-08-06T22:45:00.000Z",
+                  "end": "2025-08-07T01:45:00.000Z"
+                }
+              ],
+              "2025-08-08": [
+                {
+                  "start": "2025-08-07T22:45:07.000Z",
+                  "end": "2025-08-08T01:45:00.000Z"
+                }
+              ],
+              "2025-08-10": [
+                {
+                  "start": "2025-08-09T22:45:22.000Z",
+                  "end": "2025-08-10T01:45:00.000Z"
+                }
+              ],
+              "2025-08-11": [
+                {
+                  "start": "2025-08-11T00:23:57.000Z",
+                  "end": "2025-08-11T01:45:00.000Z"
+                }
+              ],
+              "2025-08-12": [
+                {
+                  "start": "2025-08-11T22:51:20.000Z",
+                  "end": "2025-08-12T01:45:00.000Z"
+                }
+              ],
+              "2025-08-17": [
+                {
+                  "start": "2025-08-16T22:59:10.000Z",
+                  "end": "2025-08-17T01:45:00.000Z"
+                }
+              ],
+              "2025-08-18": [
+                {
+                  "start": "2025-08-18T00:37:51.000Z",
+                  "end": "2025-08-18T01:45:00.000Z"
+                }
+              ],
+              "2025-08-19": [
+                {
+                  "start": "2025-08-19T00:44:23.000Z",
+                  "end": "2025-08-19T01:45:00.000Z"
+                }
+              ],
+              "2025-08-20": [
+                {
+                  "start": "2025-08-19T23:34:57.000Z",
+                  "end": "2025-08-20T01:45:00.000Z"
+                }
+              ],
+              "2025-08-21": [
+                {
+                  "start": "2025-08-20T22:45:06.000Z",
+                  "end": "2025-08-21T01:45:00.000Z"
+                }
+              ],
+              "2025-08-22": [
+                {
+                  "start": "2025-08-21T22:45:08.000Z",
+                  "end": "2025-08-22T01:45:00.000Z"
+                }
+              ],
+              "2025-08-24": [
+                {
+                  "start": "2025-08-23T22:48:27.000Z",
+                  "end": "2025-08-24T01:45:00.000Z"
+                }
+              ],
+              "2025-08-25": [
+                {
+                  "start": "2025-08-24T22:54:12.000Z",
+                  "end": "2025-08-25T01:45:00.000Z"
+                }
+              ],
+              "2025-08-28": [
+                {
+                  "start": "2025-08-27T22:45:05.000Z",
+                  "end": "2025-08-28T01:45:00.000Z"
+                }
+              ],
+              "2025-08-31": [
+                {
+                  "start": "2025-08-30T22:58:03.000Z",
+                  "end": "2025-08-31T01:45:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-08-04": [
+                {
+                  "start": "2025-08-03T23:12:52.000Z",
+                  "end": "2025-08-04T01:30:00.000Z"
+                }
+              ],
+              "2025-08-14": [
+                {
+                  "start": "2025-08-13T23:30:26.000Z",
+                  "end": "2025-08-14T01:45:00.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-08-27": [
+                {
+                  "start": "2025-08-26T22:45:00.000Z",
+                  "end": "2025-08-27T01:23:45.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-08-01": [
+                {
+                  "start": "2025-08-01T00:17:00.000Z",
+                  "end": "2025-08-01T01:30:00.000Z"
+                }
+              ],
+              "2025-08-07": [
+                {
+                  "start": "2025-08-06T23:00:00.000Z",
+                  "end": "2025-08-07T01:30:00.000Z"
+                }
+              ],
+              "2025-08-14": [
+                {
+                  "start": "2025-08-13T22:57:00.000Z",
+                  "end": "2025-08-14T00:50:00.000Z"
+                }
+              ],
+              "2025-08-17": [
+                {
+                  "start": "2025-08-16T23:25:00.000Z",
+                  "end": "2025-08-17T01:45:00.000Z"
+                }
+              ],
+              "2025-08-20": [
+                {
+                  "start": "2025-08-20T00:02:00.000Z",
+                  "end": "2025-08-20T00:45:00.000Z"
+                }
+              ],
+              "2025-08-21": [
+                {
+                  "start": "2025-08-20T23:06:30.000Z",
+                  "end": "2025-08-21T01:45:00.000Z"
+                }
+              ],
+              "2025-08-24": [
+                {
+                  "start": "2025-08-23T23:50:00.000Z",
+                  "end": "2025-08-24T01:15:00.000Z"
+                }
+              ],
+              "2025-08-31": [
+                {
+                  "start": "2025-08-31T00:00:00.000Z",
+                  "end": "2025-08-31T01:00:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-12-16T04:09:17.187Z"
+    },
+    {
+      "id": "sch_1765858507338",
+      "user_id": "default",
+      "month": "2025-09",
+      "amount": 3161.0787760416665,
+      "details": {
+        "calculationId": "2025_09",
+        "studentCount": 8,
+        "totalHours": 97.63472222222222,
+        "monthlyStipend": 1500,
+        "workableDays": 16,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "02:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 50.36916666666668,
+            "baseStipend": 1526.8033854166667,
+            "bonusStipend": 248.62434895833331,
+            "finalStipend": 1775.427734375
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 14.434166666666666,
+            "baseStipend": 421.09374999999994,
+            "bonusStipend": 0,
+            "finalStipend": 421.09374999999994
+          },
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 9.72888888888889,
+            "baseStipend": 313.71744791666663,
+            "bonusStipend": 0,
+            "finalStipend": 313.71744791666663
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 8.988888888888887,
+            "baseStipend": 280.0455729166667,
+            "bonusStipend": 0,
+            "finalStipend": 280.0455729166667
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 8.457222222222223,
+            "baseStipend": 229.140625,
+            "bonusStipend": 0,
+            "finalStipend": 229.140625
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 2.5925000000000002,
+            "baseStipend": 60.76171875,
+            "bonusStipend": 0,
+            "finalStipend": 60.76171875
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 1.8305555555555555,
+            "baseStipend": 51.985677083333336,
+            "bonusStipend": 0,
+            "finalStipend": 51.985677083333336
+          },
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 1.2333333333333334,
+            "baseStipend": 28.90625,
+            "bonusStipend": 0,
+            "finalStipend": 28.90625
+          }
+        ],
+        "rawStudentData": {
+          "203987235": {
+            "name": "אורי דוד",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:00:00.000Z",
+                  "end": "2025-09-01T01:30:00.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-10T23:15:25.000Z",
+                  "end": "2025-09-11T01:30:34.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-14T23:05:12.000Z",
+                  "end": "2025-09-15T01:31:25.000Z"
+                }
+              ],
+              "2025-09-29": [
+                {
+                  "start": "2025-09-28T23:00:00.000Z",
+                  "end": "2025-09-29T01:32:22.000Z"
+                }
+              ]
+            }
+          },
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:00:00.000Z",
+                  "end": "2025-09-01T01:24:59.000Z"
+                }
+              ],
+              "2025-09-09": [
+                {
+                  "start": "2025-09-08T23:00:00.000Z",
+                  "end": "2025-09-09T01:35:13.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-09T23:02:25.000Z",
+                  "end": "2025-09-10T01:35:37.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-15T00:10:09.000Z",
+                  "end": "2025-09-15T01:36:05.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-09-02": [
+                {
+                  "start": "2025-09-02T00:34:49.000Z",
+                  "end": "2025-09-02T02:00:00.000Z"
+                }
+              ],
+              "2025-09-07": [
+                {
+                  "start": "2025-09-06T23:00:23.000Z",
+                  "end": "2025-09-07T01:02:06.000Z"
+                }
+              ],
+              "2025-09-09": [
+                {
+                  "start": "2025-09-08T23:19:31.000Z",
+                  "end": "2025-09-09T02:00:00.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-09T23:11:09.000Z",
+                  "end": "2025-09-10T01:51:23.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-11T00:27:07.000Z",
+                  "end": "2025-09-11T02:00:00.000Z"
+                }
+              ],
+              "2025-09-14": [
+                {
+                  "start": "2025-09-13T23:00:00.000Z",
+                  "end": "2025-09-13T23:45:00.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-15T00:57:27.000Z",
+                  "end": "2025-09-15T02:00:00.000Z"
+                }
+              ],
+              "2025-09-16": [
+                {
+                  "start": "2025-09-15T23:42:00.000Z",
+                  "end": "2025-09-16T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "314752775": {
+            "name": "מאיר חנון",
+            "dailySessions": {
+              "2025-09-30": [
+                {
+                  "start": "2025-09-30T00:46:00.000Z",
+                  "end": "2025-09-30T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:01:24.000Z",
+                  "end": "2025-09-01T02:00:00.000Z"
+                }
+              ],
+              "2025-09-02": [
+                {
+                  "start": "2025-09-01T23:00:18.000Z",
+                  "end": "2025-09-02T02:00:00.000Z"
+                }
+              ],
+              "2025-09-03": [
+                {
+                  "start": "2025-09-02T23:00:00.000Z",
+                  "end": "2025-09-03T02:00:00.000Z"
+                }
+              ],
+              "2025-09-04": [
+                {
+                  "start": "2025-09-03T23:09:06.000Z",
+                  "end": "2025-09-04T02:00:00.000Z"
+                }
+              ],
+              "2025-09-05": [
+                {
+                  "start": "2025-09-04T23:02:54.000Z",
+                  "end": "2025-09-05T02:00:00.000Z"
+                }
+              ],
+              "2025-09-07": [
+                {
+                  "start": "2025-09-06T23:03:36.000Z",
+                  "end": "2025-09-07T02:00:00.000Z"
+                }
+              ],
+              "2025-09-08": [
+                {
+                  "start": "2025-09-07T23:00:00.000Z",
+                  "end": "2025-09-08T02:00:00.000Z"
+                }
+              ],
+              "2025-09-09": [
+                {
+                  "start": "2025-09-09T00:47:40.000Z",
+                  "end": "2025-09-09T02:00:00.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-10T01:03:59.000Z",
+                  "end": "2025-09-10T02:00:00.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-10T23:09:49.000Z",
+                  "end": "2025-09-11T02:00:00.000Z"
+                }
+              ],
+              "2025-09-12": [
+                {
+                  "start": "2025-09-11T23:00:00.000Z",
+                  "end": "2025-09-12T02:00:00.000Z"
+                }
+              ],
+              "2025-09-14": [
+                {
+                  "start": "2025-09-13T23:00:00.000Z",
+                  "end": "2025-09-14T02:00:00.000Z"
+                }
+              ],
+              "2025-09-15": [
+                {
+                  "start": "2025-09-14T23:00:00.000Z",
+                  "end": "2025-09-15T02:00:00.000Z"
+                }
+              ],
+              "2025-09-16": [
+                {
+                  "start": "2025-09-15T23:00:04.000Z",
+                  "end": "2025-09-16T02:00:00.000Z"
+                }
+              ],
+              "2025-09-17": [
+                {
+                  "start": "2025-09-16T23:00:00.000Z",
+                  "end": "2025-09-17T02:00:00.000Z"
+                }
+              ],
+              "2025-09-18": [
+                {
+                  "start": "2025-09-17T23:39:24.000Z",
+                  "end": "2025-09-18T02:00:00.000Z"
+                }
+              ],
+              "2025-09-19": [
+                {
+                  "start": "2025-09-18T23:05:25.000Z",
+                  "end": "2025-09-19T02:00:00.000Z"
+                }
+              ],
+              "2025-09-21": [
+                {
+                  "start": "2025-09-21T00:55:02.000Z",
+                  "end": "2025-09-21T02:00:00.000Z"
+                }
+              ],
+              "2025-09-22": [
+                {
+                  "start": "2025-09-22T00:52:27.000Z",
+                  "end": "2025-09-22T02:00:00.000Z"
+                }
+              ],
+              "2025-09-25": [
+                {
+                  "start": "2025-09-24T23:01:32.000Z",
+                  "end": "2025-09-25T01:14:49.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-09-02": [
+                {
+                  "start": "2025-09-01T23:36:45.000Z",
+                  "end": "2025-09-02T01:26:35.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-09-01": [
+                {
+                  "start": "2025-08-31T23:00:00.000Z",
+                  "end": "2025-09-01T01:30:00.000Z"
+                }
+              ],
+              "2025-09-10": [
+                {
+                  "start": "2025-09-10T00:04:50.000Z",
+                  "end": "2025-09-10T01:53:33.000Z"
+                }
+              ],
+              "2025-09-16": [
+                {
+                  "start": "2025-09-16T00:29:30.000Z",
+                  "end": "2025-09-16T01:33:23.000Z"
+                }
+              ],
+              "2025-09-17": [
+                {
+                  "start": "2025-09-17T00:05:34.000Z",
+                  "end": "2025-09-17T01:31:48.000Z"
+                }
+              ],
+              "2025-09-29": [
+                {
+                  "start": "2025-09-28T23:40:50.000Z",
+                  "end": "2025-09-29T01:19:26.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-09-03": [
+                {
+                  "start": "2025-09-03T01:06:00.000Z",
+                  "end": "2025-09-03T01:26:19.000Z"
+                }
+              ],
+              "2025-09-04": [
+                {
+                  "start": "2025-09-04T00:58:58.000Z",
+                  "end": "2025-09-04T01:41:12.000Z"
+                }
+              ],
+              "2025-09-11": [
+                {
+                  "start": "2025-09-11T00:27:00.000Z",
+                  "end": "2025-09-11T02:00:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-12-16T04:15:07.338Z"
+    },
+    {
+      "id": "sch_1765859798389",
+      "user_id": "default",
+      "month": "2025-10",
+      "amount": 1518.5633680555557,
+      "details": {
+        "calculationId": "2025_10",
+        "studentCount": 7,
+        "totalHours": 79.33305555555556,
+        "monthlyStipend": 1500,
+        "workableDays": 24,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "02:00"
+          },
+          {
+            "startDate": "2025-10-16T00:00:00.000Z",
+            "sederStart": "02:30"
+          },
+          {
+            "startDate": "2025-10-26T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 24.978333333333335,
+            "baseStipend": 471.97048611111114,
+            "bonusStipend": 0,
+            "finalStipend": 471.97048611111114
+          },
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 21.872222222222224,
+            "baseStipend": 406.4496527777778,
+            "bonusStipend": 0,
+            "finalStipend": 406.4496527777778
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 10.810555555555556,
+            "baseStipend": 228.45486111111111,
+            "bonusStipend": 0,
+            "finalStipend": 228.45486111111111
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 7.546388888888889,
+            "baseStipend": 163.71527777777777,
+            "bonusStipend": 0,
+            "finalStipend": 163.71527777777777
+          },
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 7.329444444444444,
+            "baseStipend": 130.39496527777777,
+            "bonusStipend": 0,
+            "finalStipend": 130.39496527777777
+          },
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 2.95,
+            "baseStipend": 60.9375,
+            "bonusStipend": 0,
+            "finalStipend": 60.9375
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 3.846111111111111,
+            "baseStipend": 56.640625,
+            "bonusStipend": 0,
+            "finalStipend": 56.640625
+          }
+        ],
+        "rawStudentData": {
+          "203987235": {
+            "name": "אורי דוד",
+            "dailySessions": {
+              "2025-10-01": [
+                {
+                  "start": "2025-09-30T23:03:00.000Z",
+                  "end": "2025-10-01T02:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:30:00.000Z",
+                  "end": "2025-10-16T02:06:54.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:34:07.000Z",
+                  "end": "2025-10-20T01:30:00.000Z"
+                }
+              ],
+              "2025-10-27": [
+                {
+                  "start": "2025-10-26T23:30:00.000Z",
+                  "end": "2025-10-27T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-10-08": [
+                {
+                  "start": "2025-10-08T00:31:57.000Z",
+                  "end": "2025-10-08T01:30:00.000Z"
+                }
+              ],
+              "2025-10-26": [
+                {
+                  "start": "2025-10-26T01:34:10.000Z",
+                  "end": "2025-10-26T02:30:00.000Z"
+                }
+              ],
+              "2025-10-30": [
+                {
+                  "start": "2025-10-29T23:47:26.000Z",
+                  "end": "2025-10-30T01:44:19.000Z"
+                }
+              ]
+            }
+          },
+          "314752775": {
+            "name": "מאיר חנון",
+            "dailySessions": {
+              "2025-10-22": [
+                {
+                  "start": "2025-10-21T23:30:00.000Z",
+                  "end": "2025-10-22T01:46:44.000Z"
+                }
+              ],
+              "2025-10-23": [
+                {
+                  "start": "2025-10-23T00:46:13.000Z",
+                  "end": "2025-10-23T02:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-28T00:29:03.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-31T01:11:42.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {
+              "2025-10-03": [
+                {
+                  "start": "2025-10-03T00:10:54.000Z",
+                  "end": "2025-10-03T02:00:00.000Z"
+                }
+              ],
+              "2025-10-05": [
+                {
+                  "start": "2025-10-04T23:15:45.000Z",
+                  "end": "2025-10-05T02:00:00.000Z"
+                }
+              ],
+              "2025-10-06": [
+                {
+                  "start": "2025-10-05T23:14:04.000Z",
+                  "end": "2025-10-06T02:00:00.000Z"
+                }
+              ],
+              "2025-10-09": [
+                {
+                  "start": "2025-10-08T23:21:45.000Z",
+                  "end": "2025-10-09T02:00:00.000Z"
+                }
+              ],
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:30:00.000Z",
+                  "end": "2025-10-16T02:30:00.000Z"
+                }
+              ],
+              "2025-10-17": [
+                {
+                  "start": "2025-10-17T00:48:04.000Z",
+                  "end": "2025-10-17T02:30:00.000Z"
+                }
+              ],
+              "2025-10-19": [
+                {
+                  "start": "2025-10-18T23:30:00.000Z",
+                  "end": "2025-10-19T02:30:00.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-20T00:47:37.000Z",
+                  "end": "2025-10-20T02:30:00.000Z"
+                }
+              ],
+              "2025-10-21": [
+                {
+                  "start": "2025-10-21T00:47:41.000Z",
+                  "end": "2025-10-21T02:30:00.000Z"
+                }
+              ],
+              "2025-10-24": [
+                {
+                  "start": "2025-10-24T01:41:50.000Z",
+                  "end": "2025-10-24T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:30:45.000Z",
+                  "end": "2025-10-20T01:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-27T23:30:00.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-29": [
+                {
+                  "start": "2025-10-28T23:30:00.000Z",
+                  "end": "2025-10-29T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-30T23:40:37.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-10-16": [
+                {
+                  "start": "2025-10-15T23:46:53.000Z",
+                  "end": "2025-10-16T02:30:00.000Z"
+                }
+              ],
+              "2025-10-17": [
+                {
+                  "start": "2025-10-17T00:11:04.000Z",
+                  "end": "2025-10-17T02:30:00.000Z"
+                }
+              ],
+              "2025-10-19": [
+                {
+                  "start": "2025-10-19T00:28:35.000Z",
+                  "end": "2025-10-19T02:15:33.000Z"
+                }
+              ],
+              "2025-10-20": [
+                {
+                  "start": "2025-10-19T23:47:54.000Z",
+                  "end": "2025-10-20T02:30:00.000Z"
+                }
+              ],
+              "2025-10-22": [
+                {
+                  "start": "2025-10-21T23:30:00.000Z",
+                  "end": "2025-10-22T02:30:00.000Z"
+                }
+              ],
+              "2025-10-23": [
+                {
+                  "start": "2025-10-23T00:06:42.000Z",
+                  "end": "2025-10-23T02:30:00.000Z"
+                }
+              ],
+              "2025-10-27": [
+                {
+                  "start": "2025-10-27T00:30:31.000Z",
+                  "end": "2025-10-27T02:30:00.000Z"
+                }
+              ],
+              "2025-10-28": [
+                {
+                  "start": "2025-10-27T23:49:57.000Z",
+                  "end": "2025-10-28T02:30:00.000Z"
+                }
+              ],
+              "2025-10-29": [
+                {
+                  "start": "2025-10-28T23:57:15.000Z",
+                  "end": "2025-10-29T02:30:00.000Z"
+                }
+              ],
+              "2025-10-31": [
+                {
+                  "start": "2025-10-30T23:38:00.000Z",
+                  "end": "2025-10-31T02:30:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-12-16T04:36:38.389Z"
+    },
+    {
+      "id": "sch_1765861321845",
+      "user_id": "default",
+      "month": "2025-07",
+      "amount": 1179.9228395061727,
+      "details": {
+        "calculationId": "2025_07",
+        "studentCount": 4,
+        "totalHours": 64.75222222222223,
+        "monthlyStipend": 1500,
+        "workableDays": 27,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:30"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "203987235",
+            "name": "אורי דוד",
+            "totalHours": 24,
+            "baseStipend": 444.4444444444444,
+            "bonusStipend": 55.55555555555556,
+            "finalStipend": 499.99999999999994
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 17.646944444444443,
+            "baseStipend": 307.3225308641976,
+            "bonusStipend": 0,
+            "finalStipend": 307.3225308641976
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 14.728055555555555,
+            "baseStipend": 228.47222222222223,
+            "bonusStipend": 0,
+            "finalStipend": 228.47222222222223
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 8.377222222222223,
+            "baseStipend": 144.1280864197531,
+            "bonusStipend": 0,
+            "finalStipend": 144.1280864197531
+          }
+        ],
+        "rawStudentData": {
+          "203987235": {
+            "name": "אורי דוד",
+            "dailySessions": {
+              "2025-07-01": [
+                {
+                  "start": "2025-06-30T22:30:00.000Z",
+                  "end": "2025-07-01T01:30:00.000Z"
+                }
+              ],
+              "2025-07-02": [
+                {
+                  "start": "2025-07-01T22:30:00.000Z",
+                  "end": "2025-07-02T01:30:00.000Z"
+                }
+              ],
+              "2025-07-03": [
+                {
+                  "start": "2025-07-02T22:30:00.000Z",
+                  "end": "2025-07-03T01:30:00.000Z"
+                }
+              ],
+              "2025-07-04": [
+                {
+                  "start": "2025-07-03T22:30:00.000Z",
+                  "end": "2025-07-04T01:30:00.000Z"
+                }
+              ],
+              "2025-07-05": [
+                {
+                  "start": "2025-07-04T22:30:00.000Z",
+                  "end": "2025-07-05T01:30:00.000Z"
+                }
+              ],
+              "2025-07-06": [
+                {
+                  "start": "2025-07-05T22:30:00.000Z",
+                  "end": "2025-07-06T01:30:00.000Z"
+                }
+              ],
+              "2025-07-07": [
+                {
+                  "start": "2025-07-06T22:30:00.000Z",
+                  "end": "2025-07-07T01:30:00.000Z"
+                }
+              ],
+              "2025-07-08": [
+                {
+                  "start": "2025-07-07T22:30:00.000Z",
+                  "end": "2025-07-08T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-07-20": [
+                {
+                  "start": "2025-07-19T22:40:00.000Z",
+                  "end": "2025-07-20T01:20:00.000Z"
+                }
+              ],
+              "2025-07-21": [
+                {
+                  "start": "2025-07-20T22:45:00.000Z",
+                  "end": "2025-07-21T01:20:00.000Z"
+                }
+              ],
+              "2025-07-23": [
+                {
+                  "start": "2025-07-22T23:15:00.000Z",
+                  "end": "2025-07-23T01:20:00.000Z"
+                }
+              ],
+              "2025-07-25": [
+                {
+                  "start": "2025-07-24T22:30:00.000Z",
+                  "end": "2025-07-25T01:30:00.000Z"
+                }
+              ],
+              "2025-07-27": [
+                {
+                  "start": "2025-07-26T22:50:00.000Z",
+                  "end": "2025-07-27T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-27T22:31:11.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:50:00.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-07-23": [
+                {
+                  "start": "2025-07-22T22:30:00.000Z",
+                  "end": "2025-07-23T01:30:00.000Z"
+                }
+              ],
+              "2025-07-24": [
+                {
+                  "start": "2025-07-23T22:30:00.000Z",
+                  "end": "2025-07-24T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-28T00:48:54.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:48:28.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-07-20": [
+                {
+                  "start": "2025-07-19T23:30:00.000Z",
+                  "end": "2025-07-20T01:30:00.000Z"
+                }
+              ],
+              "2025-07-21": [
+                {
+                  "start": "2025-07-20T23:30:00.000Z",
+                  "end": "2025-07-21T01:30:00.000Z"
+                }
+              ],
+              "2025-07-25": [
+                {
+                  "start": "2025-07-24T22:30:00.000Z",
+                  "end": "2025-07-25T01:30:00.000Z"
+                }
+              ],
+              "2025-07-28": [
+                {
+                  "start": "2025-07-27T23:35:27.000Z",
+                  "end": "2025-07-28T01:30:00.000Z"
+                }
+              ],
+              "2025-07-29": [
+                {
+                  "start": "2025-07-28T23:37:50.000Z",
+                  "end": "2025-07-29T01:30:00.000Z"
+                }
+              ],
+              "2025-07-30": [
+                {
+                  "start": "2025-07-29T22:46:41.000Z",
+                  "end": "2025-07-30T01:30:00.000Z"
+                }
+              ],
+              "2025-07-31": [
+                {
+                  "start": "2025-07-31T00:16:21.000Z",
+                  "end": "2025-07-31T01:30:00.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2025-12-16T05:02:01.845Z"
+    },
+    {
+      "id": "sch_1768141503966",
+      "user_id": "default",
+      "month": "2025-12",
+      "amount": 2341.803350970017,
+      "method": "new_2026",
+      "details": {
+        "calculationId": "2025_12",
+        "method": "new_2026",
+        "studentCount": 7,
+        "totalHours": 134.00555555555553,
+        "monthlyStipend": 1500,
+        "workableDays": 27,
+        "timePeriods": [
+          {
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "sederStart": "01:00"
+          }
+        ],
+        "processedData": [
+          {
+            "id": "314752775",
+            "name": "מאיר חנון",
+            "totalHours": 60.35194444444444,
+            "baseStipend": 889.2416225749558,
+            "bonusStipend": 160,
+            "finalStipend": 1049.2416225749557
+          },
+          {
+            "id": "325441038",
+            "name": "ראובן וולך",
+            "totalHours": 31.909444444444443,
+            "baseStipend": 494.8059964726631,
+            "bonusStipend": 50,
+            "finalStipend": 544.8059964726631
+          },
+          {
+            "id": "318762283",
+            "name": "בנימין בבייב",
+            "totalHours": 27.276666666666664,
+            "baseStipend": 429.5855379188713,
+            "bonusStipend": 80,
+            "finalStipend": 509.5855379188713
+          },
+          {
+            "id": "311192025",
+            "name": "נתן נמני",
+            "totalHours": 9.59861111111111,
+            "baseStipend": 150.8862433862434,
+            "bonusStipend": 10,
+            "finalStipend": 160.8862433862434
+          },
+          {
+            "id": "325951762",
+            "name": "משה חי רז",
+            "totalHours": 3.3366666666666664,
+            "baseStipend": 52.96296296296296,
+            "bonusStipend": 0,
+            "finalStipend": 52.96296296296296
+          },
+          {
+            "id": "300545696",
+            "name": "אלון שמש",
+            "totalHours": 0.7958333333333333,
+            "baseStipend": 12.632275132275133,
+            "bonusStipend": 0,
+            "finalStipend": 12.632275132275133
+          },
+          {
+            "id": "315301531",
+            "name": "משה קלאר",
+            "totalHours": 0.7363888888888889,
+            "baseStipend": 11.688712522045854,
+            "bonusStipend": 0,
+            "finalStipend": 11.688712522045854
+          }
+        ],
+        "rawStudentData": {
+          "300545696": {
+            "name": "אלון שמש",
+            "dailySessions": {
+              "2025-12-24": [
+                {
+                  "start": "2025-12-24T02:12:15.000Z",
+                  "end": "2025-12-24T03:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "311192025": {
+            "name": "נתן נמני",
+            "dailySessions": {
+              "2025-12-01": [
+                {
+                  "start": "2025-12-01T00:28:08.000Z",
+                  "end": "2025-12-01T03:00:00.000Z"
+                }
+              ],
+              "2025-12-04": [
+                {
+                  "start": "2025-12-03T23:24:26.000Z",
+                  "end": "2025-12-04T03:00:00.000Z"
+                }
+              ],
+              "2025-12-10": [
+                {
+                  "start": "2025-12-09T23:31:31.000Z",
+                  "end": "2025-12-10T03:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "314752775": {
+            "name": "מאיר חנון",
+            "dailySessions": {
+              "2025-12-03": [
+                {
+                  "start": "2025-12-02T23:05:10.000Z",
+                  "end": "2025-12-03T03:00:00.000Z"
+                }
+              ],
+              "2025-12-04": [
+                {
+                  "start": "2025-12-03T23:44:57.000Z",
+                  "end": "2025-12-04T03:00:00.000Z"
+                }
+              ],
+              "2025-12-05": [
+                {
+                  "start": "2025-12-04T23:00:00.000Z",
+                  "end": "2025-12-05T03:00:00.000Z"
+                }
+              ],
+              "2025-12-07": [
+                {
+                  "start": "2025-12-06T23:00:00.000Z",
+                  "end": "2025-12-07T03:00:00.000Z"
+                }
+              ],
+              "2025-12-08": [
+                {
+                  "start": "2025-12-08T00:24:26.000Z",
+                  "end": "2025-12-08T02:38:18.000Z"
+                }
+              ],
+              "2025-12-10": [
+                {
+                  "start": "2025-12-09T23:00:00.000Z",
+                  "end": "2025-12-10T03:00:00.000Z"
+                }
+              ],
+              "2025-12-11": [
+                {
+                  "start": "2025-12-10T23:02:24.000Z",
+                  "end": "2025-12-11T03:00:00.000Z"
+                }
+              ],
+              "2025-12-12": [
+                {
+                  "start": "2025-12-11T23:14:45.000Z",
+                  "end": "2025-12-12T03:00:00.000Z"
+                }
+              ],
+              "2025-12-14": [
+                {
+                  "start": "2025-12-13T23:00:07.000Z",
+                  "end": "2025-12-14T01:39:05.000Z"
+                }
+              ],
+              "2025-12-15": [
+                {
+                  "start": "2025-12-14T23:19:22.000Z",
+                  "end": "2025-12-14T23:54:36.000Z"
+                },
+                {
+                  "start": "2025-12-15T02:29:56.000Z",
+                  "end": "2025-12-15T03:00:00.000Z"
+                }
+              ],
+              "2025-12-16": [
+                {
+                  "start": "2025-12-15T23:16:24.000Z",
+                  "end": "2025-12-16T03:00:00.000Z"
+                }
+              ],
+              "2025-12-18": [
+                {
+                  "start": "2025-12-18T01:28:09.000Z",
+                  "end": "2025-12-18T03:00:00.000Z"
+                }
+              ],
+              "2025-12-22": [
+                {
+                  "start": "2025-12-21T23:26:01.000Z",
+                  "end": "2025-12-22T03:00:00.000Z"
+                }
+              ],
+              "2025-12-24": [
+                {
+                  "start": "2025-12-23T23:00:00.000Z",
+                  "end": "2025-12-24T03:00:00.000Z"
+                }
+              ],
+              "2025-12-26": [
+                {
+                  "start": "2025-12-25T23:00:26.000Z",
+                  "end": "2025-12-26T01:51:24.000Z"
+                }
+              ],
+              "2025-12-28": [
+                {
+                  "start": "2025-12-27T23:00:00.000Z",
+                  "end": "2025-12-28T03:00:00.000Z"
+                }
+              ],
+              "2025-12-29": [
+                {
+                  "start": "2025-12-28T23:00:00.000Z",
+                  "end": "2025-12-28T23:25:20.000Z"
+                }
+              ],
+              "2025-12-30": [
+                {
+                  "start": "2025-12-29T23:17:41.000Z",
+                  "end": "2025-12-30T03:00:00.000Z"
+                }
+              ],
+              "2025-12-31": [
+                {
+                  "start": "2025-12-30T23:17:48.000Z",
+                  "end": "2025-12-31T03:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "315301531": {
+            "name": "משה קלאר",
+            "dailySessions": {
+              "2025-12-10": [
+                {
+                  "start": "2025-12-10T02:03:36.000Z",
+                  "end": "2025-12-10T02:47:47.000Z"
+                }
+              ]
+            }
+          },
+          "318762283": {
+            "name": "בנימין בבייב",
+            "dailySessions": {
+              "2025-12-02": [
+                {
+                  "start": "2025-12-01T23:32:27.000Z",
+                  "end": "2025-12-02T02:50:09.000Z"
+                }
+              ],
+              "2025-12-03": [
+                {
+                  "start": "2025-12-02T23:30:22.000Z",
+                  "end": "2025-12-03T03:00:00.000Z"
+                }
+              ],
+              "2025-12-04": [
+                {
+                  "start": "2025-12-03T23:23:13.000Z",
+                  "end": "2025-12-04T03:00:00.000Z"
+                }
+              ],
+              "2025-12-05": [
+                {
+                  "start": "2025-12-04T23:24:01.000Z",
+                  "end": "2025-12-05T03:00:00.000Z"
+                }
+              ],
+              "2025-12-08": [
+                {
+                  "start": "2025-12-07T23:18:11.000Z",
+                  "end": "2025-12-08T02:37:27.000Z"
+                }
+              ],
+              "2025-12-22": [
+                {
+                  "start": "2025-12-21T23:00:00.000Z",
+                  "end": "2025-12-22T00:11:45.000Z"
+                }
+              ],
+              "2025-12-28": [
+                {
+                  "start": "2025-12-27T23:11:06.000Z",
+                  "end": "2025-12-28T01:01:11.000Z"
+                }
+              ],
+              "2025-12-29": [
+                {
+                  "start": "2025-12-28T23:00:00.000Z",
+                  "end": "2025-12-29T01:01:52.000Z"
+                }
+              ],
+              "2025-12-30": [
+                {
+                  "start": "2025-12-29T23:12:17.000Z",
+                  "end": "2025-12-30T01:53:48.000Z"
+                }
+              ],
+              "2025-12-31": [
+                {
+                  "start": "2025-12-30T23:00:00.000Z",
+                  "end": "2025-12-31T01:12:01.000Z"
+                }
+              ]
+            }
+          },
+          "325441038": {
+            "name": "ראובן וולך",
+            "dailySessions": {
+              "2025-12-01": [
+                {
+                  "start": "2025-12-01T00:35:27.000Z",
+                  "end": "2025-12-01T02:30:00.000Z"
+                }
+              ],
+              "2025-12-02": [
+                {
+                  "start": "2025-12-02T00:10:40.000Z",
+                  "end": "2025-12-02T03:00:00.000Z"
+                }
+              ],
+              "2025-12-03": [
+                {
+                  "start": "2025-12-02T23:36:08.000Z",
+                  "end": "2025-12-03T02:50:10.000Z"
+                }
+              ],
+              "2025-12-04": [
+                {
+                  "start": "2025-12-03T23:20:48.000Z",
+                  "end": "2025-12-04T02:54:13.000Z"
+                }
+              ],
+              "2025-12-07": [
+                {
+                  "start": "2025-12-06T23:00:00.000Z",
+                  "end": "2025-12-07T02:36:54.000Z"
+                }
+              ],
+              "2025-12-08": [
+                {
+                  "start": "2025-12-07T23:00:00.000Z",
+                  "end": "2025-12-08T02:30:00.000Z"
+                }
+              ],
+              "2025-12-15": [
+                {
+                  "start": "2025-12-14T23:00:00.000Z",
+                  "end": "2025-12-15T03:00:00.000Z"
+                }
+              ],
+              "2025-12-16": [
+                {
+                  "start": "2025-12-16T02:09:15.000Z",
+                  "end": "2025-12-16T03:00:00.000Z"
+                }
+              ],
+              "2025-12-17": [
+                {
+                  "start": "2025-12-17T00:05:16.000Z",
+                  "end": "2025-12-17T03:00:00.000Z"
+                }
+              ],
+              "2025-12-30": [
+                {
+                  "start": "2025-12-29T23:26:07.000Z",
+                  "end": "2025-12-30T03:00:00.000Z"
+                }
+              ],
+              "2025-12-31": [
+                {
+                  "start": "2025-12-31T01:03:02.000Z",
+                  "end": "2025-12-31T03:00:00.000Z"
+                }
+              ]
+            }
+          },
+          "325951762": {
+            "name": "משה חי רז",
+            "dailySessions": {
+              "2025-12-03": [
+                {
+                  "start": "2025-12-03T01:25:52.000Z",
+                  "end": "2025-12-03T02:48:06.000Z"
+                }
+              ],
+              "2025-12-04": [
+                {
+                  "start": "2025-12-04T00:47:19.000Z",
+                  "end": "2025-12-04T02:45:17.000Z"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "timestamp": "2026-01-11T14:25:03.966Z"
+    }
+  ]
+}
