@@ -77,6 +77,13 @@
                     <div class="mb-4">
                         <label class="block text-lg font-medium text-gray-700 mb-2">2. פרמטרים לחישוב</label>
                         <div class="mb-3">
+                            <label for="calculation-method" class="text-sm font-medium">שיטת חישוב</label>
+                            <select id="calculation-method" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                <option value="classic" selected>תקנון ישן</option>
+                                <option value="new_2026">תקנון מעודכן</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
                             <label for="monthly-stipend" class="text-sm font-medium">סכום מלגה חודשית מלאה (בש"ח)</label>
                             <input type="number" id="monthly-stipend" value="1500" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
                         </div>
@@ -159,7 +166,28 @@
         console.log('🚀 Initializing Scholarship Calculator - API mode');
 
         // DOM Elements
-        const fileUpload = document.getElementById('file-upload'), calculateBtn = document.getElementById('calculate-btn'), clearStorageBtn = document.getElementById('clear-storage-btn'), monthlyStipendInput = document.getElementById('monthly-stipend'), workableDaysInput = document.getElementById('workable-days'), saveBtn = document.getElementById('save-btn'), timePeriodsContainer = document.getElementById('time-periods-container'), addPeriodBtn = document.getElementById('add-period-btn'), resultsContainer = document.getElementById('results-container'), initialMessage = document.getElementById('initial-message'), loader = document.getElementById('loader'), errorMessage = document.getElementById('error-message'), resultsTableContainer = document.getElementById('results-table-container'), resultsBody = document.getElementById('results-body'), totalsRow = document.getElementById('totals-row'), exportBtn = document.getElementById('export-btn'), reportsBtn = document.getElementById('reports-btn'), dropZone = document.getElementById('drop-zone'), fileNameDisplay = document.getElementById('file-name-display'), summaryBar = document.getElementById('summary-bar'), reportModal = document.getElementById('report-modal'), closeModalBtn = document.getElementById('close-modal-btn'), generateGeneralReportBtn = document.getElementById('generate-general-report'), generateIndividualReportsBtn = document.getElementById('generate-individual-reports'), printableArea = document.getElementById('printable-area'), resultsTitle = document.getElementById('results-title'), loadHistoryBtn = document.getElementById('load-history-btn');
+        const fileUpload = document.getElementById('file-upload'), calculateBtn = document.getElementById('calculate-btn'), clearStorageBtn = document.getElementById('clear-storage-btn'), monthlyStipendInput = document.getElementById('monthly-stipend'), workableDaysInput = document.getElementById('workable-days'), saveBtn = document.getElementById('save-btn'), timePeriodsContainer = document.getElementById('time-periods-container'), addPeriodBtn = document.getElementById('add-period-btn'), resultsContainer = document.getElementById('results-container'), initialMessage = document.getElementById('initial-message'), loader = document.getElementById('loader'), errorMessage = document.getElementById('error-message'), resultsTableContainer = document.getElementById('results-table-container'), resultsBody = document.getElementById('results-body'), totalsRow = document.getElementById('totals-row'), exportBtn = document.getElementById('export-btn'), reportsBtn = document.getElementById('reports-btn'), dropZone = document.getElementById('drop-zone'), fileNameDisplay = document.getElementById('file-name-display'), summaryBar = document.getElementById('summary-bar'), reportModal = document.getElementById('report-modal'), closeModalBtn = document.getElementById('close-modal-btn'), generateGeneralReportBtn = document.getElementById('generate-general-report'), generateIndividualReportsBtn = document.getElementById('generate-individual-reports'), printableArea = document.getElementById('printable-area'), resultsTitle = document.getElementById('results-title'), loadHistoryBtn = document.getElementById('load-history-btn'), calculationMethod = document.getElementById('calculation-method');
+
+        // UI Update for Calculation Method
+        function updateUIForMethod() {
+            const sederInput = document.querySelector('.seder-start');
+            const sederNote = document.getElementById('seder-note');
+            if (calculationMethod.value === 'new_2026') {
+                if (sederInput) {
+                    sederInput.value = '01:00';
+                    sederInput.disabled = true;
+                }
+                if (sederNote) sederNote.classList.remove('hidden');
+            } else {
+                if (sederInput) {
+                    sederInput.value = '01:30';
+                    sederInput.disabled = false;
+                }
+                if (sederNote) sederNote.classList.add('hidden');
+            }
+        }
+
+        calculationMethod.addEventListener('change', updateUIForMethod);
 
         let fileContent = null, processedData = [], rawStudentData = null, calculationParams = {};
 
@@ -202,6 +230,7 @@
         function initializeApp() {
             populateHistoryDropdown();
             addDefaultTimePeriod();
+            updateUIForMethod();
         }
         
         // --- Core Functions ---
@@ -350,74 +379,115 @@
             console.log('🧮 calculateStipends - dailyRate:', dailyRate);
             console.log('🧮 calculateStipends - timePeriods:', timePeriods);
             
-            for (const [id, data] of studentData.entries()) {
-                console.log(`🧮 Processing student ${id} (${data.name})`);
-                let totalMinutes = 0, baseStipend = 0;
-                const weeklyData = new Map();
+            if (calculationMethod.value === 'new_2026') {
+                // תקנון מעודכן: חישוב יחסי לפי דקות בתוך 01:00-05:00, בונוס יומי, ללא בונוס שבועי
+                function getOverlapMinutes(sessionStart, sessionEnd, windowStart, windowEnd) {
+                    const overlapStart = Math.max(sessionStart.getTime(), windowStart.getTime());
+                    const overlapEnd = Math.min(sessionEnd.getTime(), windowEnd.getTime());
+                    return overlapEnd > overlapStart ? (overlapEnd - overlapStart) / 60000 : 0;
+                }
                 
-                console.log(`  Daily Sessions for ${id}:`, data.dailySessions);
-                
-                data.dailySessions.forEach((sessions, dateKey) => {
-                    console.log(`    Date ${dateKey}: ${sessions.length} sessions`);
-                    const [y, m, d] = dateKey.split('-').map(Number), currentDate = new Date(y, m - 1, d);
-                    const dailyValue = calculateDailySlotValue(sessions, dailyRate, getTimePeriodForDate(currentDate, timePeriods), dateKey);
-                    console.log(`      Daily Value: ${dailyValue}`);
-                    baseStipend += dailyValue;
-                    sessions.forEach(s => { totalMinutes += (s.end - s.start) / 60000; });
-                    const weekStart = new Date(currentDate);
-                    weekStart.setDate(currentDate.getDate() - currentDate.getDay());
-                    const weekKey = `${weekStart.getFullYear()}-${weekStart.getMonth() + 1}-${weekStart.getDate()}`;
-                    if (!weeklyData.has(weekKey)) weeklyData.set(weekKey, { daysAttended: new Set(), valueSum: 0 });
-                    weeklyData.get(weekKey).daysAttended.add(dateKey);
-                    weeklyData.get(weekKey).valueSum += dailyValue;
-                });
-                console.log(`  Total baseStipend for ${id}: ${baseStipend}, totalMinutes: ${totalMinutes}`);
-                let bonusStipend = 0;
-                weeklyData.forEach((week, weekKey) => {
-                    let daysCount = week.daysAttended.size;
-                    let valueSum = week.valueSum;
-                    // בדיקה אם זה השבוע הראשון של החודש
-                    const [wYear, wMonth, wDay] = weekKey.split('-').map(Number);
-                    const isFirstWeekOfMonth = wDay <= 6;
-                    if (isFirstWeekOfMonth) {
-                        // נשלוף את נתוני השבוע האחרון של החודש הקודם מה-localStorage
-                        try {
-                            const index = JSON.parse(localStorage.getItem(STORAGE_INDEX_KEY) || '[]');
-                            if (index.length > 0) {
-                                // נניח שהחישוב האחרון הוא החודש הקודם
-                                const lastKey = index[index.length - 1].key;
-                                const prevMonthData = JSON.parse(localStorage.getItem(lastKey));
-                                if (prevMonthData && prevMonthData.studentData && prevMonthData.studentData[id]) {
-                                    const prevSessions = prevMonthData.studentData[id].dailySessions;
-                                    for (const prevDateKey in prevSessions) {
-                                        const [py, pm, pd] = prevDateKey.split('-').map(Number);
-                                        const prevDate = new Date(py, pm - 1, pd);
-                                        // האם היום שייך לאותו שבוע קלנדרי?
-                                        const prevWeekStart = new Date(prevDate);
-                                        prevWeekStart.setDate(prevDate.getDate() - prevDate.getDay());
-                                        const prevWeekKey = `${prevWeekStart.getFullYear()}-${prevWeekStart.getMonth() + 1}-${prevWeekStart.getDate()}`;
-                                        if (prevWeekKey === weekKey) {
-                                            daysCount++;
-                                            valueSum += calculateDailySlotValue(prevSessions[prevDateKey], dailyRate, getTimePeriodForDate(prevDate, timePeriods), prevDateKey);
+                for (const [id, data] of studentData.entries()) {
+                    console.log(`🧮 Processing student ${id} (${data.name}) - New Regulation`);
+                    let totalMinutes = 0, baseStipend = 0, bonusStipend = 0;
+                    
+                    data.dailySessions.forEach((sessions, dateKey) => {
+                        let dayMinutes = 0;
+                        let firstArrival = null;
+                        const dayWindowStart = new Date(`${dateKey}T01:00:00`);
+                        const dayWindowEnd = new Date(`${dateKey}T05:00:00`);
+                        
+                        sessions.forEach(s => {
+                            dayMinutes += getOverlapMinutes(s.start, s.end, dayWindowStart, dayWindowEnd);
+                            if (firstArrival === null || s.start < firstArrival) firstArrival = s.start;
+                        });
+                        totalMinutes += dayMinutes;
+                        const dayBase = Math.min((dayMinutes / 210) * dailyRate, dailyRate);
+                        baseStipend += dayBase;
+                        
+                        // בונוס יומי אם הגעה עד 01:30
+                        if (firstArrival) {
+                            const arrivalTime = new Date(firstArrival);
+                            const bonusThreshold = new Date(`${dateKey}T01:30:00`);
+                            if (arrivalTime <= bonusThreshold) {
+                                bonusStipend += 10;
+                            }
+                        }
+                    });
+                    
+                    results.push({ id, name: data.name, totalHours: totalMinutes / 60, baseStipend, bonusStipend, finalStipend: baseStipend + bonusStipend });
+                }
+            } else {
+                // תקנון ישן: לוגיקה קיימת עם בונוס שבועי
+                for (const [id, data] of studentData.entries()) {
+                    console.log(`🧮 Processing student ${id} (${data.name})`);
+                    let totalMinutes = 0, baseStipend = 0;
+                    const weeklyData = new Map();
+                    
+                    console.log(`  Daily Sessions for ${id}:`, data.dailySessions);
+                    
+                    data.dailySessions.forEach((sessions, dateKey) => {
+                        console.log(`    Date ${dateKey}: ${sessions.length} sessions`);
+                        const [y, m, d] = dateKey.split('-').map(Number), currentDate = new Date(y, m - 1, d);
+                        const dailyValue = calculateDailySlotValue(sessions, dailyRate, getTimePeriodForDate(currentDate, timePeriods), dateKey);
+                        console.log(`      Daily Value: ${dailyValue}`);
+                        baseStipend += dailyValue;
+                        sessions.forEach(s => { totalMinutes += (s.end - s.start) / 60000; });
+                        const weekStart = new Date(currentDate);
+                        weekStart.setDate(currentDate.getDate() - currentDate.getDay());
+                        const weekKey = `${weekStart.getFullYear()}-${weekStart.getMonth() + 1}-${weekStart.getDate()}`;
+                        if (!weeklyData.has(weekKey)) weeklyData.set(weekKey, { daysAttended: new Set(), valueSum: 0 });
+                        weeklyData.get(weekKey).daysAttended.add(dateKey);
+                        weeklyData.get(weekKey).valueSum += dailyValue;
+                    });
+                    console.log(`  Total baseStipend for ${id}: ${baseStipend}, totalMinutes: ${totalMinutes}`);
+                    let bonusStipend = 0;
+                    weeklyData.forEach((week, weekKey) => {
+                        let daysCount = week.daysAttended.size;
+                        let valueSum = week.valueSum;
+                        // בדיקה אם זה השבוע הראשון של החודש
+                        const [wYear, wMonth, wDay] = weekKey.split('-').map(Number);
+                        const isFirstWeekOfMonth = wDay <= 6;
+                        if (isFirstWeekOfMonth) {
+                            // נשלוף את נתוני השבוע האחרון של החודש הקודם מה-localStorage
+                            try {
+                                const index = JSON.parse(localStorage.getItem(STORAGE_INDEX_KEY) || '[]');
+                                if (index.length > 0) {
+                                    // נניח שהחישוב האחרון הוא החודש הקודם
+                                    const lastKey = index[index.length - 1].key;
+                                    const prevMonthData = JSON.parse(localStorage.getItem(lastKey));
+                                    if (prevMonthData && prevMonthData.studentData && prevMonthData.studentData[id]) {
+                                        const prevSessions = prevMonthData.studentData[id].dailySessions;
+                                        for (const prevDateKey in prevSessions) {
+                                            const [py, pm, pd] = prevDateKey.split('-').map(Number);
+                                            const prevDate = new Date(py, pm - 1, pd);
+                                            // האם היום שייך לאותו שבוע קלנדרי?
+                                            const prevWeekStart = new Date(prevDate);
+                                            prevWeekStart.setDate(prevDate.getDate() - prevDate.getDay());
+                                            const prevWeekKey = `${prevWeekStart.getFullYear()}-${prevWeekStart.getMonth() + 1}-${prevWeekStart.getDate()}`;
+                                            if (prevWeekKey === weekKey) {
+                                                daysCount++;
+                                                valueSum += calculateDailySlotValue(prevSessions[prevDateKey], dailyRate, getTimePeriodForDate(prevDate, timePeriods), prevDateKey);
+                                            }
                                         }
                                     }
                                 }
-                            }
-                        } catch (e) {}
-                    }
-                    if (daysCount === 5) {
-                        bonusStipend += valueSum / 5;
-                    } else if (daysCount === 6) {
-                        bonusStipend += valueSum / 6;
-                    }
-                });
-                results.push({ id, name: data.name, totalHours: totalMinutes / 60, baseStipend, bonusStipend, finalStipend: baseStipend + bonusStipend });
+                            } catch (e) {}
+                        }
+                        if (daysCount === 5) {
+                            bonusStipend += valueSum / 5;
+                        } else if (daysCount === 6) {
+                            bonusStipend += valueSum / 6;
+                        }
+                    });
+                    results.push({ id, name: data.name, totalHours: totalMinutes / 60, baseStipend, bonusStipend, finalStipend: baseStipend + bonusStipend });
+                }
             }
             return results.sort((a, b) => b.finalStipend - a.finalStipend);
         }
         
         // --- UI & Dynamic Period Functions ---
-        function addDefaultTimePeriod() { timePeriodsContainer.innerHTML += `<div class="time-period-block border border-gray-200 p-3 rounded-lg"><p class="text-sm font-medium text-gray-600 mb-2">ברירת מחדל</p><div><label class="text-xs font-medium">שעת תחילת הסדר</label><input type="time" value="01:30" class="time-input seder-start mt-1 block w-full px-2 py-1 bg-gray-50 border border-gray-300 rounded-md text-sm"></div></div>`; }
+        function addDefaultTimePeriod() { timePeriodsContainer.innerHTML += `<div class="time-period-block border border-gray-200 p-3 rounded-lg"><p class="text-sm font-medium text-gray-600 mb-2">ברירת מחדל</p><div><label class="text-xs font-medium">שעת תחילת הסדר</label><div class="flex items-center gap-2"><input type="time" value="01:30" class="time-input seder-start mt-1 block w-full px-2 py-1 bg-gray-50 border border-gray-300 rounded-md text-sm"><span class="text-xs text-gray-500 hidden" id="seder-note">(קבוע לפי תקנון)</span></div></div></div>`; }
         function addTimePeriod() {
             const newPeriodBlock = document.createElement('div');
             newPeriodBlock.className = 'time-period-block border border-gray-200 p-3 rounded-lg relative';
@@ -467,8 +537,10 @@
                         user_id: 'default',
                         month: `${year}-${String(month).padStart(2, '0')}`,
                         amount: processedData.reduce((sum, student) => sum + student.finalStipend, 0),
+                        method: calculationMethod.value,
                         details: {
                             calculationId: `${year}_${String(month).padStart(2, '0')}`,
+                            method: calculationMethod.value,
                             studentCount: processedData.length,
                             totalHours: processedData.reduce((sum, student) => sum + student.totalHours, 0),
                             monthlyStipend: parseFloat(monthlyStipendInput.value),
@@ -552,7 +624,8 @@
                         
                         historySelect.innerHTML = history.map(item => {
                             const [year, month] = item.month.split('-');
-                            return `<option value="${item.id}">חודש ${month}/${year} (${new Date(item.timestamp).toLocaleDateString('he-IL')})</option>`;
+                            const methodText = item.method === 'new_2026' ? 'תקנון מעודכן' : 'תקנון ישן';
+                            return `<option value="${item.id}">חודש ${month}/${year} (${methodText}) (${new Date(item.timestamp).toLocaleDateString('he-IL')})</option>`;
                         }).join('');
                         
                         console.log(`✅ Loaded ${history.length} calculation(s) from API`);
@@ -587,6 +660,9 @@
                     if (!data.details) {
                         throw new Error('Invalid data format');
                     }
+                    
+                    // עדכן את שיטת החישוב
+                    calculationMethod.value = data.method || 'classic';
                     
                     const details = data.details;
                     const [year, month] = data.month.split('-');
@@ -695,16 +771,27 @@
         // --- Reporting & Printing Functions ---
         function getCalculationExplanationHTML(params) {
             const monthlyStipend = parseFloat(monthlyStipendInput.value).toFixed(2), dailyRate = params.dailyRate.toFixed(2), workableDays = params.workableDaysInMonth;
-            return `<div class="explanation-box mt-6 pt-4 border-t-2 border-dashed" dir="rtl">
-                    <h4 class="text-md font-bold mb-2">הסבר על אופן חישוב המלגה:</h4>
-                    <ul class="list-disc list-inside text-xs space-y-1 text-gray-700">
-                        <li>סכום המלגה החודשי (${monthlyStipend} ₪) מחולק במקסימום ימי נוכחות בחודש הנוכחי (${workableDays}) לקבלת שווי המלגה לסדר מלא (${dailyRate} ₪).</li>
-                        <li>המלגה לשעת הלימוד הראשונה בכל סדר שווה 50% משווי המלגה לסדר המלא.</li>
-                        <li>המלגה בשעתיים הבאות שווה 25% משווי המלגה לסדר המלא, (כל אחת).</li>
-                        <li>המלגה מחושבת באופן יחסי לפי זמן הנוכחות.</li>
-                        <li><b>בונוס שבועי:</b> על נוכחות של 5 ימים בשבוע, מתקבל בונוס השווה לממוצע של חמשת ימי הנוכחות באותו שבוע.</li>
-                    </ul>
-                </div>`;
+            if (calculationMethod.value === 'new_2026') {
+                return `<div class="explanation-box mt-6 pt-4 border-t-2 border-dashed" dir="rtl">
+                        <h4 class="text-md font-bold mb-2">הסבר על אופן חישוב המלגה (תקנון מעודכן):</h4>
+                        <ul class="list-disc list-inside text-xs space-y-1 text-gray-700">
+                            <li>סכום המלגה החודשי (${monthlyStipend} ₪) מחולק במקסימום ימי נוכחות בחודש הנוכחי (${workableDays}) לקבלת שווי המלגה היומי (${dailyRate} ₪).</li>
+                            <li>משך הסדר המלא הוא 3.5 שעות. המלגה מחושבת באופן יחסי למשך הנוכחות בפועל.</li>
+                            <li>אברך המגיע עד השעה 01:30 זכאי לבונוס יומי של 10 ש"ח.</li>
+                        </ul>
+                    </div>`;
+            } else {
+                return `<div class="explanation-box mt-6 pt-4 border-t-2 border-dashed" dir="rtl">
+                        <h4 class="text-md font-bold mb-2">הסבר על אופן חישוב המלגה (תקנון ישן):</h4>
+                        <ul class="list-disc list-inside text-xs space-y-1 text-gray-700">
+                            <li>סכום המלגה החודשי (${monthlyStipend} ₪) מחולק במקסימום ימי נוכחות בחודש הנוכחי (${workableDays}) לקבלת שווי המלגה לסדר מלא (${dailyRate} ₪).</li>
+                            <li>המלגה לשעת הלימוד הראשונה בכל סדר שווה 50% משווי המלגה לסדר המלא.</li>
+                            <li>המלגה בשעתיים הבאות שווה 25% משווי המלגה לסדר המלא, (כל אחת).</li>
+                            <li>המלגה מחושבת באופן יחסי לפי זמן הנוכחות.</li>
+                            <li><b>בונוס שבועי:</b> על נוכחות של 5 ימים בשבוע, מתקבל בונוס השווה לממוצע של חמשת ימי הנוכחות באותו שבוע.</li>
+                        </ul>
+                    </div>`;
+            }
         }
 
         function generateGeneralReport() {
